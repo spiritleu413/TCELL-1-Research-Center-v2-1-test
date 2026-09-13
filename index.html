@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-Hant-TW">
 <head>
-  <meta charset="utf-8">
+  <meta cfharset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b4f8a">
   <meta name="color-scheme" content="light">
@@ -1151,7 +1151,7 @@
     }
 
     const navbarCollapse = document.getElementById('mainNavbar');
-    const navLinks = navbarCollapse.querySelectorAll('.nav-link');
+    const navLinks = navbarCollapse.querySelectorAll('.nav-link,a[href="#latest"])');
 
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
