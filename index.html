@@ -1155,8 +1155,10 @@
 
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
-        const collapseInstance = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
-        if (collapseInstance && window.innerWidth < 1200) collapseInstance.hide();
+        
+        navbarCollapse.classlist.remove('show');
+        navbarCollapse.style.height='';
+        document.querySelector('.navbar-toggler')?.SetAttribute('aria-expanded','false');
       });
     });
 
