@@ -1155,7 +1155,7 @@
 
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
-        const collapseInstance = bootstrap.Collapse.getInstance(navbarCollapse);
+        const collapseInstance = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
         if (collapseInstance && window.innerWidth < 1200) collapseInstance.hide();
       });
     });
