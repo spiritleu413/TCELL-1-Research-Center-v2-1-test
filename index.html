@@ -1156,7 +1156,7 @@
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
         
-        bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
+        navbarCollapse.classList.remove('show');
         navbarCollapse.style.height='';
         document.querySelector('.navbar-toggler')?.SetAttribute('aria-expanded','false');
       });
