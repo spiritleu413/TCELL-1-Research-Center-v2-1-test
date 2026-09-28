@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-Hant-TW">
 <head>
-  <meta cfharset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b4f8a">
   <meta name="color-scheme" content="light">
@@ -561,7 +561,30 @@
     .mission-card p { margin: 0; color: var(--tcell-muted); font-size: .93rem; }
 
 
-    @media (max-width: 991.98px) {
+
+    /* V1.0-03: base interaction/footer styles */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+
+    footer { color: #dce8f2; background: var(--tcell-blue-dark); }
+    footer p { color: #bfcfdb; }
+    .footer-brand { display: flex; align-items: center; gap: .8rem; margin-bottom: 1rem; color: #fff; font-weight: 900; }
+    .footer-list { margin: 0; padding: 0; list-style: none; }
+    .footer-list li + li { margin-top: .55rem; }
+    .footer-list a { color: #dce8f2; text-decoration: none; }
+    .footer-list a:hover, .footer-list a:focus { color: #9cf0c8; }
+    .footer-bottom { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,.14); color: #aebfcb; }
+
+    .back-to-top {
+      position: fixed; right: 18px; bottom: 18px; z-index: 1040;
+      display: grid; place-items: center; width: 46px; height: 46px;
+      border: 0; border-radius: 50%; color: #fff; background: var(--tcell-green);
+      box-shadow: 0 10px 26px rgba(0,0,0,.2); opacity: 0; visibility: hidden;
+      transform: translateY(10px); transition: opacity .2s ease, transform .2s ease, visibility .2s;
+    }
+    .back-to-top.show { opacity: 1; visibility: visible; transform: none; }
+
+    @media (max-width: 1199.98px) {
       .navbar-collapse {
         margin-top: .8rem;
         padding: .85rem;
@@ -611,6 +634,59 @@
       .section-title { overflow-wrap: anywhere; }
     }
 
+
+    /* V1.0-07: mobile navigation hardening */
+    @media (max-width: 1199.98px) {
+      .navbar-shell { z-index: 1050; }
+
+      /* V1.0-13: independent mobile menu.
+         Bootstrap no longer controls mobile open/close. */
+      #mainNavbar {
+        display: none !important;
+        height: auto !important;
+      }
+
+      #mainNavbar.mobile-menu-open {
+        display: block !important;
+      }
+
+      .navbar-collapse {
+        max-height: calc(100vh - 82px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .navbar .nav-link {
+        min-height: 46px;
+        display: flex;
+        align-items: center;
+        padding: .72rem .8rem !important;
+        border-radius: 10px;
+      }
+
+      .navbar .nav-link::after { display: none; }
+
+      .navbar .nav-link:hover,
+      .navbar .nav-link:focus,
+      .navbar .nav-link.active {
+        background: var(--tcell-blue-soft);
+      }
+    }
+
+    @media (max-width: 420px) {
+      .navbar-brand { min-width: 0; }
+      .navbar-brand > span:last-child { min-width: 0; }
+      .brand-title {
+        display: block;
+        overflow-wrap: anywhere;
+      }
+      .navbar-toggler {
+        flex: 0 0 auto;
+        margin-left: .35rem;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after {
         scroll-behavior: auto !important;
@@ -642,20 +718,20 @@
           </span>
         </a>
 
-        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="開啟或關閉導覽選單">
+        <button class="navbar-toggler border-0 shadow-none" type="button" id="mobileMenuToggle" aria-controls="mainNavbar" aria-expanded="false" aria-label="開啟或關閉導覽選單">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto align-items-xl-center">
-            <li class="nav-item"><a class="nav-link active" href="#top">首頁</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about-tcell">認識 TCELL-1</a></li>
-            <li class="nav-item"><a class="nav-link" href="#research">科學研究</a></li>
-            <li class="nav-item"><a class="nav-link" href="#dashboard">科學證據地圖</a></li>
-            <li class="nav-item"><a class="nav-link" href="#literature">文獻與原始資料</a></li>
-            <li class="nav-item"><a class="nav-link" href="#mission">關於本站</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#top" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">首頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-tcell" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">認識 TCELL-1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">科學研究</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dashboard" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">科學證據地圖</a></li>
+            <li class="nav-item"><a class="nav-link" href="#literature" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">文獻與原始資料</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mission" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">關於本站</a></li>
             <li class="nav-item ms-xl-2 mt-2 mt-xl-0">
-              <a class="btn btn-sm rounded-pill px-3 py-2 text-white" style="background:var(--tcell-green)" href="#latest">
+              <a class="btn btn-sm rounded-pill px-3 py-2 text-white" style="background:var(--tcell-green)" href="#latest" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">
                 <i class="bi bi-journal-richtext me-1" aria-hidden="true"></i>最新更新
               </a>
             </li>
@@ -1151,16 +1227,46 @@
     }
 
     const navbarCollapse = document.getElementById('mainNavbar');
-    const navLinks = navbarCollapse.querySelectorAll('.nav-link,a[href="#latest"])');
+    const navbarToggler = document.getElementById('mobileMenuToggle');
 
-    navLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        
-        navbarCollapse.classList.remove('show');
-        navbarCollapse.style.height='';
-        document.querySelector('.navbar-toggler')?.SetAttribute('aria-expanded','false');
+    /* V1.0-13: independent mobile menu controller.
+       No Bootstrap Collapse API, no `show` state, and no timing dependency. */
+    const setMobileMenuOpen = (open) => {
+      if (!navbarCollapse || !navbarToggler) return;
+      navbarCollapse.classList.toggle('mobile-menu-open', open);
+      navbarToggler.classList.toggle('collapsed', !open);
+      navbarToggler.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    if (navbarToggler) {
+      navbarToggler.addEventListener('click', () => {
+        if (window.innerWidth >= 1200) return;
+
+        /* A nav-link click may leave an inline display:none as an explicit
+           closed state. Clear it only when the hamburger is pressed again. */
+        navbarCollapse.style.removeProperty('display');
+
+        const isOpen = navbarCollapse.classList.contains('mobile-menu-open');
+        setMobileMenuOpen(!isOpen);
       });
-    });
+    }
+
+    /* V1.0-16: mobile nav links close directly in their HTML onclick
+       attributes. This avoids any dependency on delegated or registered
+       JavaScript link listeners. */
+
+    /* Keep state clean when rotating/resizing between mobile and desktop. */
+    window.addEventListener('resize', () => {
+      if (!navbarCollapse || !navbarToggler) return;
+
+      if (window.innerWidth >= 1200) {
+        navbarCollapse.classList.remove('mobile-menu-open');
+        navbarToggler.classList.add('collapsed');
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      } else {
+        setMobileMenuOpen(false);
+      }
+    }, { passive: true });
 
     const sectionLinks = [...document.querySelectorAll('.navbar .nav-link[href^="#"]')];
     const sections = sectionLinks
