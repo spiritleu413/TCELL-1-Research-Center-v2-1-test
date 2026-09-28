@@ -1273,12 +1273,21 @@
       .map((link) => document.querySelector(link.getAttribute('href')))
       .filter(Boolean);
 
+    /* V1.0-17: determine the active section by the greatest actual offsetTop,
+       not by navbar link order. This prevents an earlier section such as
+       #dashboard from overriding #research simply because it appears later
+       in the menu array. */
     const setActiveLink = () => {
       const scrollPosition = window.scrollY + 130;
       let currentId = '#top';
+      let currentTop = -Infinity;
 
       sections.forEach((section) => {
-        if (section.offsetTop <= scrollPosition) currentId = `#${section.id}`;
+        const top = section.offsetTop;
+        if (top <= scrollPosition && top > currentTop) {
+          currentTop = top;
+          currentId = `#${section.id}`;
+        }
       });
 
       sectionLinks.forEach((link) => {
