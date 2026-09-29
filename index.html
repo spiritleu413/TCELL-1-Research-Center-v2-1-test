@@ -259,7 +259,7 @@
       color: #98e8c3;
       font-size: .38em;
       letter-spacing: .08em;
-      text-transform: uppercase;
+      text-transform: none;
     }
 
     .hero-copy {
@@ -753,11 +753,11 @@
 
             <h1 id="hero-title">
               TCELL-1 原生益菌<br>科學資訊中心
-              <span>Lactobacillus rhamnosus TCELL-1</span>
+              <span><em>Lacticaseibacillus rhamnosus</em> TCELL-1</span>
             </h1>
 
             <p class="hero-copy">
-              從菌株身分、人體腸道來源、基礎研究、人體研究到政府核准資料，以原始文件與可查證證據建立 TCELL-1 的科學資料庫。
+              從菌株身分、人體腸道來源、基礎研究、人體研究到政府核准資料，以原始文件與可查證證據，系統整理 TCELL-1 的科學資料。
             </p>
 
             <div class="hero-actions">
@@ -770,7 +770,7 @@
             </div>
 
             <div class="hero-trust" aria-label="網站資訊原則">
-              <span><i class="bi bi-check-circle-fill text-success" aria-hidden="true"></i>原始資料可追溯</span>
+              <span><i class="bi bi-check-circle-fill text-success" aria-hidden="true"></i>資料來源可追溯</span>
               <span><i class="bi bi-check-circle-fill text-success" aria-hidden="true"></i>研究證據分級</span>
               <span><i class="bi bi-check-circle-fill text-success" aria-hidden="true"></i>政府核准資料可查證</span>
             </div>
@@ -1273,7 +1273,7 @@
       .map((link) => document.querySelector(link.getAttribute('href')))
       .filter(Boolean);
 
-    /* V1.0-17: determine the active section by the greatest actual offsetTop,
+    /* V1.0-19: scientific-name capitalization fixed; V1.0-18 content retained by the greatest actual offsetTop,
        not by navbar link order. This prevents an earlier section such as
        #dashboard from overriding #research simply because it appears later
        in the menu array. */
