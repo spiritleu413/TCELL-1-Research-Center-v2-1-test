@@ -697,6 +697,93 @@
       scroll-margin-top: 100px;
     }
 
+    /* V1.0-26: research history & institution section */
+    #history,
+    #institutions {
+      scroll-margin-top: 100px;
+    }
+
+    .history-timeline {
+      position: relative;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .history-timeline::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 20px;
+      width: 2px;
+      content: "";
+      background: linear-gradient(180deg, rgba(11,79,138,.28), rgba(46,139,103,.45));
+    }
+
+    .history-item {
+      position: relative;
+      padding-left: 58px;
+      margin-bottom: 1.25rem;
+    }
+
+    .history-item:last-child { margin-bottom: 0; }
+
+    .history-dot {
+      position: absolute;
+      top: 1.55rem;
+      left: 8px;
+      width: 26px;
+      height: 26px;
+      border: 6px solid #fff;
+      border-radius: 50%;
+      background: var(--tcell-green);
+      box-shadow: 0 0 0 1px rgba(46,139,103,.26), var(--shadow-sm);
+    }
+
+    .history-card {
+      padding: 1.45rem 1.5rem;
+    }
+
+    .history-date {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      margin-bottom: .7rem;
+      padding: .34rem .72rem;
+      border-radius: 999px;
+      background: var(--tcell-blue-soft);
+      color: var(--tcell-blue-dark);
+      font-size: .82rem;
+      font-weight: 900;
+      letter-spacing: .02em;
+    }
+
+    .history-card h3 {
+      margin-bottom: .7rem;
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--tcell-blue-dark);
+    }
+
+    .history-card p:last-child { margin-bottom: 0; }
+
+    .history-status {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+      margin-top: .85rem;
+    }
+
+    @media (max-width: 575.98px) {
+      .history-timeline::before { left: 14px; }
+      .history-item { padding-left: 43px; }
+      .history-dot {
+        left: 3px;
+        width: 24px;
+        height: 24px;
+      }
+      .history-card { padding: 1.25rem 1.15rem; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after {
         scroll-behavior: auto !important;
@@ -971,7 +1058,7 @@
               <div class="feature-icon"><i class="bi bi-diagram-3" aria-hidden="true"></i></div>
               <h3>研究歷程與合作機構</h3>
               <p>依年代整理 TCELL-1 的研究發展、合作機構與重要里程碑，並標示資料來源與查核狀態。</p>
-              <a class="text-link" href="#literature">查看研究歷程 <i class="bi bi-arrow-right"></i></a>
+              <a class="text-link" href="#history">查看研究歷程 <i class="bi bi-arrow-right"></i></a>
             </article>
           </div>
 
@@ -1652,6 +1739,203 @@
       </div>
     </section>
 
+    <section class="section-space" id="history" aria-labelledby="history-title">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-8 reveal">
+            <span class="section-kicker"><i class="bi bi-clock-history"></i> Research History &amp; Institutions</span>
+            <h2 class="section-title display-6 mb-2" id="history-title">研究歷程與合作／研究機構</h2>
+            <p class="text-secondary mb-0">依可追溯文件、研究報告、公開登錄與學會資料整理 TCELL-1 的研究發展；有明確日期才列日期，來源未標日期者不自行補寫。</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0 reveal">
+            <span class="badge rounded-pill badge-soft-green px-3 py-2">V1.0-26｜持續查核</span>
+          </div>
+        </div>
+
+        <div class="dashboard-note mb-4 reveal">
+          <strong>查核狀態：</strong>
+          <span class="badge rounded-pill badge-soft-blue ms-1">原始文件已取得</span>
+          <span class="badge rounded-pill badge-soft-green ms-1">研究報告可追溯</span>
+          <span class="badge rounded-pill badge-soft-gold ms-1">公開資料可查</span>
+          <span class="badge rounded-pill bg-light text-dark border ms-1">學會資料／投影片</span>
+          <span class="badge rounded-pill bg-light text-dark border ms-1">待原始資料確認</span>
+          <div class="small text-secondary mt-2">查核標籤表示資料可追溯程度，不是研究品質評分，也不代表人體療效已獲確認。</div>
+        </div>
+
+        <div class="text-center mt-5 mb-4 reveal">
+          <span class="section-kicker"><i class="bi bi-signpost-split"></i> Timeline</span>
+          <h3 class="section-title h2 mb-2">TCELL-1 研究歷程時間軸</h3>
+          <p class="section-lead mb-0">研究完成、學會發表、政府核准、臨床試驗登錄與同儕審查期刊發表屬不同證據類型，本站分開標示。</p>
+        </div>
+
+        <div class="history-timeline">
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2000</span>
+              <h3>菌株保存與早期動物研究</h3>
+              <p class="text-secondary mb-2">4 月 14 日：TCELL-1 保存於 CCRC，編號 <strong>CCRC 910145</strong>；8 月 22 日：保存於 ATCC，編號 <strong>PTA-2406</strong>。</p>
+              <p class="text-secondary mb-2">同年食品工業發展研究所完成「TCELL-1 純乳酸菌粉對 SD 大鼠腸道菌相之影響」，工作報告第 89-1619 號／食研企字第 00369 號。</p>
+              <p class="small text-secondary mb-0"><strong>證據邊界：</strong>菌株保存建立可追溯身分；保存本身不等同健康效益證明。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-blue">原始保存紀錄</span>
+                <span class="badge rounded-pill badge-soft-green">研究報告可追溯</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2001.02.08</span>
+              <h3>菌株篩選、鑑定與基礎特性研究</h3>
+              <p class="text-secondary mb-2">國立清華大學（90）清生科系字第 00537 號，整理 TCELL-1 的篩選、鑑定、PCR／16S rDNA、ribotyping，以及抗酸、耐膽鹽等菌株基礎特性。</p>
+              <p class="text-secondary mb-2">食品工業發展研究所另有 2001 年「總乳酸菌計數、溫度、酸鹼值、有機酸之分析」，食研菌字第 02542 號。</p>
+              <p class="small text-secondary mb-0"><strong>用詞界線：</strong>16S rDNA 為片段定序與分型資料，不寫成「全基因組定序」。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-green">研究報告可追溯</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2002</span>
+              <h3>動物安全性、食研分析與品質評選階段</h3>
+              <p class="text-secondary mb-2">台大醫學院實驗動物中心吳銘芳進行「TCELL-1 乳酸菌粉之健康食品第二類安全性評估試驗」。食品工業發展研究所同年另有總乳酸菌數與免疫樣品分析資料。</p>
+              <p class="text-secondary mb-2">藍皮書另收錄 2002 國家生技醫療品質入圍獎資料；本站將獎項紀錄與研究證據分開呈現。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-green">研究報告可追溯</span>
+                <span class="badge rounded-pill bg-light text-dark border">獎項資料另列</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2003</span>
+              <h3>人體研究與學會發表</h3>
+              <p class="text-secondary mb-2">藍皮書時間資料記載：9 月 25 日日本名古屋第 62 屆癌學會相關發表；10 月 25 日中國醫藥學院附設醫院人體安全性研究；11 月 14 日第二屆亞洲乳酸菌協會台北發表之抗菌物質研究。</p>
+              <p class="small text-secondary mb-0"><strong>查核提醒：</strong>人體安全性與腸胃功能研究在參考文獻中沒有分別標示完整年份，因此不把所有人體研究一律定為 2003；完整原始報告仍待建檔核對。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill bg-light text-dark border">部分確認</span>
+                <span class="badge rounded-pill bg-light text-dark border">原始報告待核對</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2004</span>
+              <h3>A00042 核准與日本長崎動物研究發表</h3>
+              <p class="text-secondary mb-2">藍皮書時間資料記載 2 月 20 日取得衛署健食字第 <strong>A00042</strong> 號健康食品認證；這是早期核准日期，與目前建檔之展延效期「民國 118 年 2 月 20 日」分開判讀。</p>
+              <p class="text-secondary mb-2">5 月 20 日，日本長崎實驗動物科學・技術發表會資料包含 B16-F10、A549、Smmu7721、A498 等動物模型與免疫指標；藍皮書註明相關內容節錄自吳銘芳博士赴日學會發表投影片。</p>
+              <p class="small text-secondary mb-0"><strong>證據邊界：</strong>學會／投影片資料不直接視為完整同儕審查期刊論文，也不能推論人體癌症療效。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-blue">政府核准紀錄</span>
+                <span class="badge rounded-pill bg-light text-dark border">學會資料／投影片</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2021–2022</span>
+              <h3>NCT05570942 人體臨床試驗登錄</h3>
+              <p class="text-secondary mb-2">國立臺灣大學醫院發起之 Phase 2 人體介入研究，研究對象為接受輔助化療之第三期大腸直腸癌患者；計畫收案 56 人，採隨機、安慰劑對照與雙盲設計。</p>
+              <p class="small text-secondary mb-0"><strong>查核提醒：</strong>公開登錄可證明研究已登錄；不等同研究已完成、結果為陽性或人體療效已證實，研究結果與正式發表狀態持續查核。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-gold">公開資料可查</span>
+                <span class="badge rounded-pill bg-light text-dark border">結果持續查核</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2025</span>
+              <h3>TCELL 高脂飲食大鼠同儕審查期刊研究</h3>
+              <p class="text-secondary mb-2"><em>Gastroenterology Research and Practice</em> 發表 Article 5540686，以高脂飲食大鼠模型評估文中所稱 <em>L. rhamnosus</em> TCELL 與血脂、肝臟相關指標。</p>
+              <p class="small text-secondary mb-0"><strong>重要註記：</strong>目前仍列為「TCELL 相關動物研究」；在 TCELL 與 TCELL-1 的直接菌株身分證據鏈完成核對前，不併入 TCELL-1 的直接人體療效證據。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-gold">同儕審查期刊</span>
+                <span class="badge rounded-pill bg-light text-dark border">菌株身分連結待確認</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="dashboard-note mt-4 reveal">
+          <strong>研究歷程查核原則：</strong>研究歷程只記錄可追溯的事件與文件日期；「研究報告」、「學會發表」、「政府核准」、「臨床試驗登錄」與「同儕審查期刊發表」屬不同證據層級，不互相替代。
+        </div>
+
+        <div class="text-center mt-5 mb-4 reveal" id="institutions">
+          <span class="section-kicker"><i class="bi bi-buildings"></i> Research Institutions</span>
+          <h3 class="section-title h2 mb-2">合作／研究機構與實際研究角色</h3>
+          <p class="section-lead mb-0">依現有研究報告與參考資料，逐一標示各機構實際參與的研究工作，不使用「共同證實所有功效」的概括寫法。</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <div class="research-meta mb-3">
+                <span class="badge rounded-pill badge-soft-gold">國立清華大學</span>
+                <span>研究報告編號可追溯</span>
+              </div>
+              <h3>菌株分離、鑑定與基礎特性研究</h3>
+              <p class="text-secondary mb-2">2001 年「本土乳酸桿菌 <em>Lactobacillus rhamnosus</em> TCELL-1 的篩選與鑑定及其一些相關的特徵的研究」，（90）清生科系字第 00537 號。</p>
+              <p class="text-secondary mb-0"><strong>研究角色：</strong>人體腸道來源背景、菌株鑑定、分子身分，以及抗酸、耐膽鹽等體外特性。</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <div class="research-meta mb-3">
+                <span class="badge rounded-pill badge-soft-gold">食品工業發展研究所</span>
+                <span>工作報告／委託試驗可追溯</span>
+              </div>
+              <h3>腸道菌相、菌數、安定性與分析試驗</h3>
+              <p class="text-secondary mb-2">可追溯資料包括：工作報告第 89-1619 號／食研企字第 00369 號、食研菌字第 02542 號、00758 號，以及食研服字第 01740 號。</p>
+              <p class="text-secondary mb-0"><strong>研究角色：</strong>SD 大鼠腸道菌相、菌數與安定性、有機酸及相關檢驗分析。</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <div class="research-meta mb-3">
+                <span class="badge rounded-pill badge-soft-blue">台大醫學院實驗動物中心</span>
+                <span>安全性研究＋學會資料</span>
+              </div>
+              <h3>動物安全性與腫瘤／免疫探索研究</h3>
+              <p class="text-secondary mb-2">2002 年吳銘芳「TCELL-1 乳酸菌粉之健康食品第二類安全性評估試驗」明列於台大醫學院實驗動物中心。</p>
+              <p class="text-secondary mb-0"><strong>研究角色：</strong>動物安全性；另有 B16-F10、A549、Smmu7721、A498 等動物模型與免疫指標之日本學會／投影片資料。</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <div class="research-meta mb-3">
+                <span class="badge rounded-pill badge-soft-green">中國醫藥學院附設醫院</span>
+                <span>完整原始報告待建檔</span>
+              </div>
+              <h3>人體安全性與人體腸胃功能研究</h3>
+              <p class="text-secondary mb-2">原始參考文獻名稱記載楊美都執行「TCELL-1 原生益菌」人體安全性評估，以及人體腸胃功能改善評估；本站保留當時文件所使用之機構名稱。</p>
+              <p class="text-secondary mb-0"><strong>研究角色：</strong>人體安全性與人體腸胃功能研究；兩項研究的受試者是否重疊及完整研究日期仍待原始報告進一步核對。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="dashboard-note mt-4 reveal">
+          <strong>合作機構閱讀原則：</strong>本站所稱「研究／合作機構」，係依現有研究報告、委託試驗、人體研究及學會資料所記載的實際研究工作整理；不代表各機構共同參與同一項研究，也不代表各機構對 TCELL-1 的所有功效主張提供全面背書。
+        </div>
+      </div>
+    </section>
+
     <section class="section-space mission-band text-center" id="mission" aria-labelledby="mission-title">
       <div class="container">
         <span class="section-kicker text-white-50 reveal"><i class="bi bi-compass"></i> Our Mission</span>
@@ -1704,6 +1988,7 @@
           <ul class="footer-list">
             <li><a href="#dashboard">科學證據地圖</a></li>
             <li><a href="#latest">最新研究與資料更新</a></li>
+            <li><a href="#history">研究歷程與合作機構</a></li>
             <li><a href="#mission">網站宗旨與編輯原則</a></li>
           </ul>
         </div>
