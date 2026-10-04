@@ -687,6 +687,16 @@
       }
     }
 
+    /* V1.0-25-01: evidence-library category anchor offset fix.
+       Only changes native hash-jump positioning so fixed navbar does not cover headings. */
+    #library-human,
+    #library-animal,
+    #library-invitro,
+    #library-government,
+    #library-identity {
+      scroll-margin-top: 100px;
+    }
+
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after {
         scroll-behavior: auto !important;
@@ -1285,60 +1295,358 @@
 
     <section class="section-space bg-white" id="literature" aria-labelledby="literature-title">
       <div class="container">
-        <div class="row align-items-end mb-5">
+        <div class="row align-items-end mb-4">
           <div class="col-lg-8 reveal">
             <span class="section-kicker"><i class="bi bi-book"></i> Evidence &amp; Source Library</span>
             <h2 class="section-title display-6 mb-2" id="literature-title">文獻與原始資料中心</h2>
-            <p class="text-secondary mb-0">收錄經來源辨識與證據分類的 TCELL-1 研究、官方文件與原始資料；每筆資料標示來源類型及可支持的結論範圍。</p>
+            <p class="text-secondary mb-0">以「來源紀錄卡」整理 TCELL-1 相關人體研究、動物研究、體外／菌株研究、政府核准文件與菌株身分文件；每筆資料分開標示來源、可支持的結論、證據邊界與查核狀態。</p>
           </div>
           <div class="col-lg-4 text-lg-end mt-3 mt-lg-0 reveal">
-            <span class="badge rounded-pill badge-soft-green px-3 py-2">持續更新</span>
+            <span class="badge rounded-pill badge-soft-green px-3 py-2">V1.0-25｜持續查核</span>
           </div>
         </div>
 
-        <div class="row g-4">
-          <div class="col-lg-6 reveal">
-            <article class="literature-card d-flex gap-3">
-              <div class="paper-icon"><i class="bi bi-journal-text"></i></div>
-              <div>
-                <h3>期刊論文與 PubMed 文獻</h3>
-                <p>整理同儕審查期刊論文，標示作者、年份、期刊、DOI／PMID、研究類型與可支持的結論。</p>
-                <a class="text-link" href="#research">查看研究資料 <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </article>
+        <div class="dashboard-note mb-5 reveal">
+          <strong>資料中心閱讀方式：</strong>「原始文件已取得」、「公開登錄可查」、「藍皮書收錄／原始報告待核對」與「學會資料／正式全文待查核」代表不同的可追溯程度；查核標籤不是研究品質評分，也不代表人體療效已獲確認。
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 justify-content-center mb-5 reveal">
+          <a class="btn btn-outline-primary rounded-pill px-3" href="#library-human">人體研究</a>
+          <a class="btn btn-outline-primary rounded-pill px-3" href="#library-animal">動物研究</a>
+          <a class="btn btn-outline-primary rounded-pill px-3" href="#library-invitro">體外／菌株研究</a>
+          <a class="btn btn-outline-primary rounded-pill px-3" href="#library-government">政府核准文件</a>
+          <a class="btn btn-outline-primary rounded-pill px-3" href="#library-identity">菌株身分／專利／保存</a>
+        </div>
+
+        <div id="library-human" class="pt-2">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-people"></i> Human Sources</span>
+            <h3 class="section-title h2 mb-2">人體研究與試驗登錄</h3>
+            <p class="section-lead mb-0">把早期人體研究、人體腸道持續檢出資料與公開試驗登錄分開呈現。</p>
           </div>
 
-          <div class="col-lg-6 reveal">
-            <article class="literature-card d-flex gap-3">
-              <div class="paper-icon"><i class="bi bi-person-vcard"></i></div>
-              <div>
-                <h3>人體研究與試驗登錄</h3>
-                <p>整理早期人體研究資料與 ClinicalTrials.gov 試驗登錄，分別標示研究設計、狀態、結果與證據限制。</p>
-                <a class="text-link" href="#research">查看人體研究 <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </article>
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-green">人體研究｜安全性</span>
+                  <span>藍皮書收錄｜原始完整報告待核對</span>
+                </div>
+                <h3>「TCELL-1 原生益菌」人體安全性評估</h3>
+                <p class="text-secondary"><strong>來源／單位：</strong>中國醫藥學院附設醫院，楊美都；現有參考資料未明確標出年份。</p>
+                <p class="text-secondary"><strong>研究設計：</strong>健康志願者分為安慰劑、低、中、高劑量；完成分析者 8、10、10、10 人，共 38 人。文件記載採雙盲方式進行 4 週，並於第 30 天及停用後第 7 天採集檢體。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>提供早期短期人體安全性觀察，包括血液、生化、尿液、過敏與不良反應等資料。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>不能由此推論所有族群、所有劑量或長期使用均已證明安全。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-green">人體研究｜腸胃功能</span>
+                  <span>受試者是否重疊待確認</span>
+                </div>
+                <h3>「TCELL-1 原生益菌」人體腸胃功能改善評估</h3>
+                <p class="text-secondary"><strong>來源／單位：</strong>中國醫藥學院附設醫院，楊美都；現有參考資料未明確標出年份。</p>
+                <p class="text-secondary"><strong>研究設計：</strong>四組設計、完成者同為 8、10、10、10 人，雙盲 4 週，並分析糞便菌相與部分腸道菌群變化。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>原資料記載部分時間點與劑量組的腸道菌相指標出現統計差異。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>安全性與腸胃功能兩章的人數與流程高度相似，目前不直接視為兩個完全獨立的 38 人試驗；是否為相同或重疊受試者，待原始研究報告確認。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-green">人體研究｜腸道持續檢出</span>
+                  <span>藍皮書附錄資料</span>
+                </div>
+                <h3>人體腸道存活／持續檢出試驗</h3>
+                <p class="text-secondary"><strong>研究設計：</strong>8 名健康成人（男 4、女 4），每日食用 4 公克 TCELL-1、連續 1 週；停用後連續數週採集糞便，以培養及 PCR 追蹤菌株。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>文件報告部分受試者停用後第 2、甚至第 3 週仍可在糞便中檢出 TCELL-1。</p>
+                <p class="small text-secondary mb-0"><strong>用詞界線：</strong>本站使用「腸道存活／持續檢出」；糞便培養與 PCR 並未直接測量腸黏膜附著，因此不直接寫成「已證明黏附／定殖」。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-green">公開試驗登錄</span>
+                  <span>NCT05570942｜結果持續查核</span>
+                </div>
+                <h3>ClinicalTrials.gov：NCT05570942</h3>
+                <p class="text-secondary"><strong>研究性質：</strong>Phase 2 人體介入研究；研究對象為接受輔助化療之第三期大腸直腸癌患者，計畫收案 56 人，採隨機、安慰劑對照與雙盲設計。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>TCELL-1 已有正式登錄的 Phase 2 人體研究。</p>
+                <p class="small text-secondary mb-3"><strong>證據邊界：</strong>試驗登錄不等同研究已完成、結果為陽性或人體療效已獲證實；研究結果與正式發表狀態持續查核。</p>
+                <a class="text-link" href="https://clinicaltrials.gov/study/NCT05570942" target="_blank" rel="noopener noreferrer">查看 ClinicalTrials.gov <i class="bi bi-box-arrow-up-right"></i></a>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div id="library-animal" class="mt-5 pt-3">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-diagram-3"></i> Animal Sources</span>
+            <h3 class="section-title h2 mb-2">動物研究報告</h3>
+            <p class="section-lead mb-0">區分正式研究報告、工作報告、學會發表資料與菌株身分仍待連結確認的期刊研究。</p>
           </div>
 
-          <div class="col-lg-6 reveal">
-            <article class="literature-card d-flex gap-3">
-              <div class="paper-icon"><i class="bi bi-patch-check"></i></div>
-              <div>
-                <h3>政府核准與官方文件</h3>
-                <p>收錄衛署健食字第 A00042 號健康食品許可證與後續展延紀錄；原始文件記載原料成分包含 <em>Lactobacillus rhamnosus</em> Tcell-1。政府核准資料與學術研究證據分開呈現。</p>
-                <a class="text-link" href="#latest">查看政府核准資料 <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </article>
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">動物安全性｜2002</span>
+                  <span>完整原始報告待建檔</span>
+                </div>
+                <h3>TCELL-1 乳酸菌粉之健康食品第二類安全性評估試驗</h3>
+                <p class="text-secondary"><strong>研究者／單位：</strong>吳銘芳，台大醫學院實驗動物中心。</p>
+                <p class="text-secondary"><strong>研究設計：</strong>80 隻 SD 大鼠，分對照、低、中、高劑量四組，每組 20 隻，公母各 10 隻；連續 4 週，觀察體重、血液學、血清生化與病理組織。</p>
+                <p class="text-secondary mb-2"><strong>另含：</strong>微生物基因突變、動物體內微核及體外染色體結構變異等基因毒性評估。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>屬早期動物短期安全性資料，不能直接證明人體長期安全性。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">腸道菌相｜2000</span>
+                  <span>工作報告號可追溯</span>
+                </div>
+                <h3>TCELL-1 純乳酸菌粉對 SD 大鼠腸道菌相之影響</h3>
+                <p class="text-secondary"><strong>來源：</strong>食品工業發展研究所；工作報告第 89-1619 號，食研企字第 00369 號。</p>
+                <p class="text-secondary"><strong>研究設計：</strong>40 隻 6 週齡雄性 SD 大鼠，隨機分為四組，每組 10 隻；分析糞便與盲腸菌相。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>原資料記載部分劑量組的 Bifidobacteria 增加、Enterobacteriaceae 降低並達統計差異。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>不能直接寫成「已證明人體腸道菌相改善」。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">腫瘤／免疫探索</span>
+                  <span>學會發表／投影片資料</span>
+                </div>
+                <h3>2003–2004 日本學會動物研究資料</h3>
+                <p class="text-secondary"><strong>資料性質：</strong>藍皮書收錄第 62、63 屆癌學總會及 2004 年日本實驗動物科學・技術發表會相關內容；並註明內容節錄自吳銘芳博士赴日發表之投影片。</p>
+                <p class="text-secondary"><strong>研究模型：</strong>B16-F10 黑色素瘤轉移模型，以及 A549、Smmu7721、A498 等腫瘤模型；另記載 IgA、IgM、IL-2、IL-4、IL-10 等免疫指標。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>現階段視為探索性動物／學會資料，不直接視為同儕審查期刊論文，也不能推論人體癌症預防或治療效果。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">Peer-reviewed｜2025</span>
+                  <span>TCELL 相關｜身分連結待確認</span>
+                </div>
+                <h3><i>Lactobacillus rhamnosus</i> Ameliorates Dyslipidemia and Liver Injury in High-Fat-Diet-Fed Rats</h3>
+                <p class="text-secondary"><strong>作者／期刊：</strong>Y.-T. Liao 等；<em>Gastroenterology Research and Practice</em>，2025，Article 5540686。</p>
+                <p class="text-secondary mb-2"><strong>研究內容：</strong>高脂飲食大鼠模型，文中菌株標示為 <em>L. rhamnosus</em> TCELL，研究血脂與肝臟相關指標。</p>
+                <p class="small text-secondary mb-3"><strong>重要註記：</strong>目前列為「TCELL 相關動物研究」；在 TCELL 與 TCELL-1 的直接菌株身分證據鏈完成核對前，不併入 TCELL-1 的直接證據。</p>
+                <a class="text-link me-3" href="https://doi.org/10.1155/grp/5540686" target="_blank" rel="noopener noreferrer">DOI <i class="bi bi-box-arrow-up-right"></i></a>
+                <a class="text-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12537184/" target="_blank" rel="noopener noreferrer">PMC 全文 <i class="bi bi-box-arrow-up-right"></i></a>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div id="library-invitro" class="mt-5 pt-3">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-bounding-box-circles"></i> In Vitro &amp; Strain Sources</span>
+            <h3 class="section-title h2 mb-2">體外／菌株研究報告</h3>
+            <p class="section-lead mb-0">依「菌株鑑定 → 酸／膽鹽耐受 → 體外抑菌 → 代謝／有機酸」建立來源鏈。</p>
           </div>
 
-          <div class="col-lg-6 reveal">
-            <article class="literature-card d-flex gap-3">
-              <div class="paper-icon"><i class="bi bi-archive"></i></div>
-              <div>
-                <h3>研究報告與歷史原始資料</h3>
-                <p>整理研究報告、委託研究、學會資料、藍皮書與其他歷史原始文件，保留來源與年代資訊供追溯。</p>
-                <a class="text-link" href="#about-tcell">查看研究歷程 <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </article>
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">菌株鑑定｜2001</span>
+                  <span>清華大學研究報告</span>
+                </div>
+                <h3>本土乳酸桿菌 <i>Lactobacillus rhamnosus</i> TCELL1 的篩選與鑑定及其一些相關特徵</h3>
+                <p class="text-secondary"><strong>研究者／單位：</strong>林冠賢、黃健行、王競平、林志侯；國立清華大學；（90）清生科系字第 00537 號。</p>
+                <p class="text-secondary mb-2"><strong>分子資料：</strong>文件記載以 PCR 與 DNA 定序取得約 863 bp 的 16S rDNA 片段，並使用 16S+23S rDNA probe 進行 ribotyping 比較。</p>
+                <p class="small text-secondary mb-0"><strong>用詞界線：</strong>這是 16S rDNA 片段與分型資料，不寫成「完整 DNA 定序」或「全基因組定序」。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">體外耐受性</span>
+                  <span>清華大學（90）00537 號</span>
+                </div>
+                <h3>抗酸與耐膽鹽體外試驗</h3>
+                <p class="text-secondary"><strong>方法／結果：</strong>文件記載 pH 2.5 條件下 TCELL-1 生長明顯停頓，恢復至 pH 6 後仍可繼續生長；並在 0.3%～0.4% 膽鹽條件下觀察到生長。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>TCELL-1 在控制的體外條件下具有一定酸與膽鹽耐受性。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>不能由此單獨推論一定能在人體腸道定殖或產生健康效益。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">體外抑菌</span>
+                  <span>14／17 測試菌株有抑菌圈</span>
+                </div>
+                <h3>17 株測試菌之培養皿抑菌試驗</h3>
+                <p class="text-secondary"><strong>來源：</strong>清華大學（90）清生科系字第 00537 號。</p>
+                <p class="text-secondary"><strong>研究方法：</strong>以 17 株測試菌進行培養皿試驗，加入 TCELL-1 培養 72 小時之菌液，37°C 培養 24 小時後觀察抑菌圈。</p>
+                <p class="text-secondary mb-2"><strong>原資料：</strong>其中 14 株出現明顯抑菌圈，文件列舉赤痢菌、金黃色葡萄球菌與糞腸球菌等。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>這是體外抑菌活性，不能寫成「已證明在人體內消滅 14 種病原菌」。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">代謝特性｜2001</span>
+                  <span>食研菌字第 02542 號</span>
+                </div>
+                <h3>總乳酸菌計數、溫度、酸鹼值、有機酸之分析</h3>
+                <p class="text-secondary"><strong>來源：</strong>食品工業發展研究所委託試驗報告書。</p>
+                <p class="text-secondary"><strong>研究內容：</strong>以 5 組供試配方培養 TCELL-1 14 小時，分析菌數、pH、醋酸、乳酸與丙酮酸等指標。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>TCELL-1 在體外培養條件下可產生乳酸等有機酸，屬菌株代謝特性資料。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>不能單靠體外有機酸資料直接證明人體排便改善或腸胃症狀療效。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div id="library-government" class="mt-5 pt-3">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-patch-check"></i> Government &amp; Official Documents</span>
+            <h3 class="section-title h2 mb-2">政府核准與官方文件</h3>
+            <p class="section-lead mb-0">政府核准資料用來呈現特定產品的許可範圍、原料身分與行政效期，與學術研究證據分開判讀。</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">政府核准文件</span>
+                  <span>原始許可證已取得</span>
+                </div>
+                <h3>衛署健食字第 A00042 號健康食品許可證</h3>
+                <p class="text-secondary mb-2"><strong>文件意義：</strong>該產品曾通過健康食品個案審查並取得 A00042 號許可。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>產品獲准不等同 TCELL-1 對所有疾病或所有健康議題均具有人體療效。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">證書核准文字</span>
+                  <span>不得超出許可範圍</span>
+                </div>
+                <h3>核准保健功效</h3>
+                <p class="text-secondary mb-2"><strong>證書文字：</strong>「本產品有助於增加腸內益生菌。」</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>此核准文字不等同「免疫調節」、「抗癌」、「調節血脂」或其他未列於許可證之醫療／健康功效。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">原料身分連結</span>
+                  <span>A00042 ↔ Tcell-1</span>
+                </div>
+                <h3>原料成分中的 Tcell-1</h3>
+                <p class="text-secondary mb-2">原始許可文件記載原料成分包含 <em>Lactobacillus rhamnosus</em> Tcell-1，可建立「A00042 核准產品」與 Tcell-1 菌株之直接文件連結。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>產品許可與菌株本身的所有科學研究主張仍應分開判讀。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">官方展延文件</span>
+                  <span>效期至民國 118 年 2 月 20 日</span>
+                </div>
+                <h3>健康食品許可證展延紀錄</h3>
+                <p class="text-secondary mb-2">目前建檔之官方展延文件顯示效期至民國 118 年 2 月 20 日。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>展延代表許可證效期之行政延續，不等同新增、擴大或重新證明其他保健功效。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="dashboard-note mt-4 reveal">
+            <strong>政府核准證據邊界：</strong>健康食品許可證證明的是特定產品在核准範圍內取得許可；不代表政府核准該菌株對癌症、免疫、血脂或其他疾病具有治療效果。
+          </div>
+        </div>
+
+        <div id="library-identity" class="mt-5 pt-3">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-fingerprint"></i> Identity, Patent &amp; Deposits</span>
+            <h3 class="section-title h2 mb-2">菌株身分／專利／保存文件</h3>
+            <p class="section-lead mb-0">專利、保存編號與分子鑑定資料用來建立菌株來源與身分證據鏈，不取代安全性或人體健康效益研究。</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">專利公開文件</span>
+                  <span>原始全文可查</span>
+                </div>
+                <h3>US20050074440A1：<i>Lactobacillus rhamnosus strain and uses thereof</i></h3>
+                <p class="text-secondary mb-2">美國專利公開申請文件記載 Tcell-1 的分離、鑑定、PCR、ribotyping、16S rDNA 定序、保存編號及部分菌株特性。</p>
+                <p class="small text-secondary mb-3"><strong>用詞界線：</strong>本站稱為「專利公開文件／公開申請」，不把公開申請號本身寫成「美國已核准專利」。專利文件也不是人體臨床療效證明。</p>
+                <a class="text-link" href="https://patents.google.com/patent/US20050074440" target="_blank" rel="noopener noreferrer">查看 Google Patents <i class="bi bi-box-arrow-up-right"></i></a>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">菌株保存紀錄</span>
+                  <span>CCRC 910145</span>
+                </div>
+                <h3>Culture Collection and Research Center（FIRDI）</h3>
+                <p class="text-secondary mb-2">早期專利文件記載 TCELL-1 於 2000 年 4 月 14 日保存，編號 <strong>CCRC 910145</strong>；藍皮書另記載保存證明 FP000053 與存活證明 000055。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>保存編號用於建立菌株可追溯性，本身不代表人體健康功效已獲證實。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">國際保存紀錄</span>
+                  <span>ATCC PTA-2406</span>
+                </div>
+                <h3>American Type Culture Collection（ATCC）</h3>
+                <p class="text-secondary mb-2">早期專利文件記載 TCELL-1 於 2000 年 8 月 22 日保存於 ATCC，編號 <strong>PTA-2406</strong>，並依布達佩斯條約之專利程序用微生物保存制度辦理。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>ATCC 保存不等於 ATCC 對療效、安全性或商品功效背書。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">分子身分證據</span>
+                  <span>16S rDNA 片段｜非全基因組</span>
+                </div>
+                <h3>PCR、Ribotyping 與 16S rDNA 片段定序</h3>
+                <p class="text-secondary mb-2">專利記載 Ward &amp; Timmins primers 主要擴增產物約 290 bp；Alander primers 主要擴增產物約 863 bp，後者再進行 cloning 與 sequencing。專利表 2 公布 TCELL-1 的 776 bp 序列（SEQ ID No. 1）。</p>
+                <p class="small text-secondary mb-0"><strong>用詞界線：</strong>本站固定稱「16S rDNA 片段定序」，不寫成「完整 DNA 定序」或「全基因組定序」。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">人體腸道來源</span>
+                  <span>專利實驗例可追溯</span>
+                </div>
+                <h3>健康成人腸道檢體之分離來源</h3>
+                <p class="text-secondary mb-2">專利實驗例記載 6 名健康成人志願者（25–45 歲），採樣前禁食 12 小時，經內視鏡取得腸道組織檢體，再經培養、篩選與鑑定。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>可支持 TCELL-1 的人體腸道來源背景；「人體來源」本身不能證明一定優於其他菌株，也不能取代人體健康效益證據。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="dashboard-note mt-4 reveal">
+            <strong>菌株身分證據邊界：</strong>專利、保存編號、PCR、ribotyping 與 16S rDNA 定序可用來建立菌株來源與身分證據鏈；但這些資料不能取代安全性試驗、人體研究或健康效益證據。
           </div>
         </div>
       </div>
