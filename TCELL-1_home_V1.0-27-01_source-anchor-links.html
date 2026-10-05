@@ -1,0 +1,2142 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b4f8a">
+  <meta name="color-scheme" content="light">
+
+  <title>TCELL-1 原生益菌科學資訊中心｜Research Center</title>
+  <meta name="description" content="TCELL-1 原生益菌科學資訊中心，整理菌株資訊、人體研究、動物研究、體外研究、健康主題與公開文獻，提供客觀、透明、可查證的科學資訊。">
+  <meta name="keywords" content="TCELL-1, 原生益菌, 益生菌, Lactobacillus rhamnosus, 菌株研究, 腸道健康, 文獻資料庫">
+  <meta name="author" content="TCELL-1 Research Center">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://tcell1web-dgpt4fhz.manus.space/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:site_name" content="TCELL-1 Research Center">
+  <meta property="og:title" content="TCELL-1 原生益菌科學資訊中心">
+  <meta property="og:description" content="以科學證據為基礎，整理 TCELL-1 菌株資訊、研究證據與公開文獻。">
+  <meta property="og:url" content="https://tcell1web-dgpt4fhz.manus.space/">
+  <meta property="og:image" content="https://tcell1web-dgpt4fhz.manus.space/assets/images/og-cover.jpg">
+  <meta property="og:image:alt" content="TCELL-1 原生益菌科學資訊中心">
+
+  <!-- X / Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TCELL-1 原生益菌科學資訊中心">
+  <meta name="twitter:description" content="Evidence First. Transparency Always.">
+  <meta name="twitter:image" content="https://tcell1web-dgpt4fhz.manus.space/assets/images/og-cover.jpg">
+
+  <!-- Inline SVG favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b4f8a'/%3E%3Cpath d='M18 14c18 8 10 28 28 36M46 14C28 22 36 42 18 50' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M23 20h18M20 30h24M20 40h24M23 50h18' stroke='%2348b788' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <!-- Bootstrap 5.3.8 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TCELL-1 原生益菌科學資訊中心",
+    "alternateName": "TCELL-1 Research Center",
+    "url": "https://tcell1web-dgpt4fhz.manus.space/",
+    "inLanguage": "zh-Hant-TW",
+    "description": "整理 TCELL-1 菌株資訊、科學研究與公開文獻的知識平台。",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TCELL-1 Research Center"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --tcell-blue: #0b4f8a;
+      --tcell-blue-dark: #07345d;
+      --tcell-blue-soft: #eaf3fb;
+      --tcell-green: #2e8b67;
+      --tcell-green-light: #54b88a;
+      --tcell-gold: #e7a928;
+      --tcell-ink: #183042;
+      --tcell-muted: #627484;
+      --tcell-bg: #f5f8fb;
+      --tcell-border: #dfe8ef;
+      --tcell-white: #ffffff;
+      --shadow-sm: 0 8px 26px rgba(11, 79, 138, .08);
+      --shadow-lg: 0 24px 60px rgba(7, 52, 93, .16);
+      --radius-md: 18px;
+      --radius-lg: 28px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 92px;
+    }
+
+    body {
+      font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--tcell-ink);
+      background: var(--tcell-bg);
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    a { color: var(--tcell-blue); }
+    a:hover { color: var(--tcell-green); }
+
+    .skip-link {
+      position: fixed;
+      left: 16px;
+      top: -80px;
+      z-index: 9999;
+      padding: .75rem 1rem;
+      border-radius: .75rem;
+      color: #fff;
+      background: var(--tcell-blue-dark);
+      transition: top .2s ease;
+    }
+
+    .skip-link:focus { top: 16px; }
+
+    .section-space { padding: 92px 0; }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: .8rem;
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--tcell-green);
+    }
+
+    .section-title {
+      margin-bottom: 1rem;
+      font-weight: 900;
+      letter-spacing: -.03em;
+      color: var(--tcell-blue-dark);
+    }
+
+    .section-lead {
+      max-width: 760px;
+      margin-right: auto;
+      margin-left: auto;
+      color: var(--tcell-muted);
+      font-size: 1.05rem;
+    }
+
+    .navbar-shell {
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid rgba(223,232,239,.9);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 6px 24px rgba(11,79,138,.05);
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: .78rem;
+      color: var(--tcell-blue-dark) !important;
+      font-weight: 900;
+      line-height: 1.1;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--tcell-blue), var(--tcell-green));
+      box-shadow: 0 10px 24px rgba(11,79,138,.2);
+    }
+
+    .brand-mark svg { width: 31px; height: 31px; }
+
+    .brand-title { display: block; font-size: 1rem; }
+    .brand-subtitle { display: block; margin-top: .25rem; color: var(--tcell-muted); font-size: .72rem; font-weight: 700; }
+
+    .navbar .nav-link {
+      position: relative;
+      margin: 0 .12rem;
+      padding: .8rem .72rem !important;
+      color: #344e61;
+      font-size: .94rem;
+      font-weight: 750;
+    }
+
+    .navbar .nav-link::after {
+      position: absolute;
+      right: .7rem;
+      bottom: .45rem;
+      left: .7rem;
+      height: 2px;
+      content: "";
+      background: var(--tcell-green);
+      transform: scaleX(0);
+      transition: transform .2s ease;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link:focus,
+    .navbar .nav-link.active { color: var(--tcell-blue); }
+
+    .navbar .nav-link:hover::after,
+    .navbar .nav-link:focus::after,
+    .navbar .nav-link.active::after { transform: scaleX(1); }
+
+    .hero {
+      position: relative;
+      min-height: 760px;
+      padding: 150px 0 96px;
+      overflow: hidden;
+      color: #fff;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(84,184,138,.38), transparent 26%),
+        radial-gradient(circle at 12% 78%, rgba(53,134,198,.38), transparent 25%),
+        linear-gradient(128deg, #062f54 0%, #0b4f8a 48%, #0f776d 100%);
+    }
+
+    .hero::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      opacity: .42;
+      background-image:
+        linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(to bottom, #000, transparent 90%);
+    }
+
+    .hero::after {
+      position: absolute;
+      right: -160px;
+      bottom: -210px;
+      width: 620px;
+      height: 620px;
+      content: "";
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 50%;
+      box-shadow: 0 0 0 55px rgba(255,255,255,.03), 0 0 0 120px rgba(255,255,255,.025);
+    }
+
+    .hero .container { position: relative; z-index: 2; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      padding: .52rem .84rem;
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 999px;
+      color: #e8fff6;
+      background: rgba(255,255,255,.1);
+      font-size: .86rem;
+      font-weight: 800;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 1.4rem 0 1.1rem;
+      font-size: clamp(2.55rem, 5vw, 5.25rem);
+      font-weight: 950;
+      line-height: 1.08;
+      letter-spacing: -.055em;
+    }
+
+    .hero h1 span {
+      display: block;
+      margin-top: .7rem;
+      color: #98e8c3;
+      font-size: .38em;
+      letter-spacing: .08em;
+      text-transform: none;
+    }
+
+    .hero-copy {
+      max-width: 680px;
+      margin-bottom: 1.8rem;
+      color: rgba(255,255,255,.85);
+      font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .85rem; }
+
+    .btn-tcell-primary,
+    .btn-tcell-outline {
+      min-height: 52px;
+      padding: .78rem 1.35rem;
+      border-radius: 999px;
+      font-weight: 850;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .btn-tcell-primary {
+      color: var(--tcell-blue-dark);
+      border: 1px solid #b9f2d7;
+      background: #b9f2d7;
+      box-shadow: 0 14px 30px rgba(0,0,0,.16);
+    }
+
+    .btn-tcell-primary:hover,
+    .btn-tcell-primary:focus {
+      color: var(--tcell-blue-dark);
+      background: #d3f9e7;
+      transform: translateY(-2px);
+    }
+
+    .btn-tcell-outline {
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.45);
+      background: rgba(255,255,255,.08);
+    }
+
+    .btn-tcell-outline:hover,
+    .btn-tcell-outline:focus {
+      color: #fff;
+      background: rgba(255,255,255,.16);
+      transform: translateY(-2px);
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 2rem;
+      color: rgba(255,255,255,.75);
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .hero-trust span { display: inline-flex; align-items: center; gap: .45rem; }
+
+    .science-visual {
+      position: relative;
+      width: min(520px, 100%);
+      aspect-ratio: 1 / 1;
+      margin-left: auto;
+    }
+
+    .science-orbit {
+      position: absolute;
+      inset: 8%;
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 50%;
+      animation: spin 30s linear infinite;
+    }
+
+    .science-orbit::before,
+    .science-orbit::after {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      content: "";
+      border-radius: 50%;
+      background: #a8f2ce;
+      box-shadow: 0 0 0 8px rgba(168,242,206,.14);
+    }
+
+    .science-orbit::before { top: 9%; left: 18%; }
+    .science-orbit::after { right: 2%; bottom: 28%; }
+
+    .science-core {
+      position: absolute;
+      inset: 20%;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 42% 58% 58% 42% / 44% 38% 62% 56%;
+      background: linear-gradient(145deg, rgba(255,255,255,.2), rgba(255,255,255,.05));
+      box-shadow: inset 0 0 65px rgba(255,255,255,.09), 0 28px 70px rgba(0,0,0,.2);
+      backdrop-filter: blur(7px);
+      animation: morph 12s ease-in-out infinite;
+    }
+
+    .science-core svg { width: 72%; height: 72%; filter: drop-shadow(0 14px 25px rgba(0,0,0,.25)); }
+
+    .float-chip {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: .55rem;
+      padding: .65rem .85rem;
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: 14px;
+      color: #fff;
+      background: rgba(5,42,72,.5);
+      font-size: .84rem;
+      font-weight: 800;
+      box-shadow: 0 14px 35px rgba(0,0,0,.18);
+      backdrop-filter: blur(9px);
+    }
+
+    .float-chip.one { top: 9%; right: 4%; }
+    .float-chip.two { bottom: 12%; left: 0; }
+    .float-chip.three { right: 0; bottom: 27%; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes morph {
+      0%,100% { border-radius: 42% 58% 58% 42% / 44% 38% 62% 56%; transform: translateY(0); }
+      50% { border-radius: 60% 40% 44% 56% / 54% 60% 40% 46%; transform: translateY(-10px); }
+    }
+
+    .feature-card,
+    .research-card,
+    .literature-card,
+    .mission-card {
+      height: 100%;
+      border: 1px solid var(--tcell-border);
+      border-radius: var(--radius-md);
+      background: #fff;
+      box-shadow: var(--shadow-sm);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+
+    .feature-card:hover,
+    .research-card:hover,
+    .literature-card:hover {
+      border-color: rgba(46,139,103,.38);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-7px);
+    }
+
+    .feature-card { padding: 1.6rem; }
+
+    .feature-icon {
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      margin-bottom: 1.1rem;
+      border-radius: 16px;
+      color: var(--tcell-blue);
+      background: var(--tcell-blue-soft);
+      font-size: 1.45rem;
+    }
+
+    .feature-card:nth-child(2n) .feature-icon { color: var(--tcell-green); background: #e9f7f0; }
+    .feature-card h3 { font-size: 1.15rem; font-weight: 900; color: var(--tcell-blue-dark); }
+    .feature-card p { margin: 0 0 1rem; color: var(--tcell-muted); }
+    .text-link { display: inline-flex; align-items: center; gap: .38rem; font-weight: 850; text-decoration: none; }
+
+    .dashboard-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(145deg, #07345d, #0b4f8a 58%, #126b69);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .dashboard-wrap::after {
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 330px;
+      height: 330px;
+      content: "";
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(151,237,197,.18), transparent 65%);
+    }
+
+    .dashboard-copy { position: relative; z-index: 2; padding: 3rem; color: #fff; }
+    .dashboard-copy p { color: rgba(255,255,255,.75); }
+
+    .dashboard-panel {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      padding: 2rem;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(12px);
+    }
+
+    .evidence-row { margin-bottom: 1.35rem; }
+    .evidence-row:last-child { margin-bottom: 0; }
+
+    .evidence-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: .45rem;
+      font-size: .92rem;
+      font-weight: 850;
+    }
+
+    .progress {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e4edf3;
+    }
+
+    .progress-bar { border-radius: 999px; background: linear-gradient(90deg, var(--tcell-blue), var(--tcell-green)); }
+
+    .dashboard-note {
+      margin-top: 1.4rem;
+      padding: .85rem 1rem;
+      border-left: 4px solid var(--tcell-gold);
+      border-radius: 0 10px 10px 0;
+      color: #5f522f;
+      background: #fff8e5;
+      font-size: .86rem;
+    }
+
+    .research-card { overflow: hidden; }
+    .research-card .card-body { padding: 1.55rem; }
+
+    .research-thumb {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 190px;
+      overflow: hidden;
+      color: #fff;
+      background: linear-gradient(135deg, #0b4f8a, #23847a);
+    }
+
+    .research-thumb::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      opacity: .5;
+      background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,.23) 0 2px, transparent 3px);
+      background-size: 28px 28px;
+    }
+
+    .research-thumb i { position: relative; font-size: 3.4rem; }
+    .research-card h3 { font-size: 1.16rem; font-weight: 900; line-height: 1.45; color: var(--tcell-blue-dark); }
+    .research-meta { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .8rem; color: var(--tcell-muted); font-size: .82rem; }
+
+    .badge-soft-blue { color: var(--tcell-blue); background: var(--tcell-blue-soft); }
+    .badge-soft-green { color: #1f7352; background: #e6f7ef; }
+    .badge-soft-gold { color: #765512; background: #fff3d4; }
+
+    .literature-card { padding: 1.5rem; }
+    .literature-card .paper-icon {
+      display: grid;
+      flex: 0 0 auto;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      color: var(--tcell-blue);
+      background: var(--tcell-blue-soft);
+      font-size: 1.25rem;
+    }
+
+    .literature-card h3 { font-size: 1.03rem; font-weight: 900; color: var(--tcell-blue-dark); }
+    .literature-card p { margin-bottom: .6rem; color: var(--tcell-muted); font-size: .91rem; }
+
+    .mission-band {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background: linear-gradient(120deg, #0b4f8a, #0d6a6c);
+    }
+
+    .mission-band::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      opacity: .22;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cpath d='M0 45h90M45 0v90' stroke='%23fff' stroke-opacity='.2'/%3E%3Ccircle cx='45' cy='45' r='18' fill='none' stroke='%23fff' stroke-opacity='.2'/%3E%3C/svg%3E");
+    }
+
+    .mission-band .container { position: relative; z-index: 2; }
+    .mission-quote { max-width: 900px; margin: 0 auto; font-size: clamp(1.7rem, 3vw, 3rem); font-weight: 900; line-height: 1.35; letter-spacing: -.025em; }
+    .mission-sub { max-width: 760px; margin: 1.1rem auto 0; color: rgba(255,255,255,.78); }
+
+    .mission-card { padding: 1.5rem; }
+    .mission-card i { color: var(--tcell-green); font-size: 1.45rem; }
+    .mission-card h3 { margin: .85rem 0 .55rem; font-size: 1.08rem; font-weight: 900; color: var(--tcell-blue-dark); }
+    .mission-card p { margin: 0; color: var(--tcell-muted); font-size: .93rem; }
+
+
+
+    /* V1.0-03: base interaction/footer styles */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+
+    footer { color: #dce8f2; background: var(--tcell-blue-dark); }
+    footer p { color: #bfcfdb; }
+    .footer-brand { display: flex; align-items: center; gap: .8rem; margin-bottom: 1rem; color: #fff; font-weight: 900; }
+    .footer-list { margin: 0; padding: 0; list-style: none; }
+    .footer-list li + li { margin-top: .55rem; }
+    .footer-list a { color: #dce8f2; text-decoration: none; }
+    .footer-list a:hover, .footer-list a:focus { color: #9cf0c8; }
+    .footer-bottom { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,.14); color: #aebfcb; }
+
+    .back-to-top {
+      position: fixed; right: 18px; bottom: 18px; z-index: 1040;
+      display: grid; place-items: center; width: 46px; height: 46px;
+      border: 0; border-radius: 50%; color: #fff; background: var(--tcell-green);
+      box-shadow: 0 10px 26px rgba(0,0,0,.2); opacity: 0; visibility: hidden;
+      transform: translateY(10px); transition: opacity .2s ease, transform .2s ease, visibility .2s;
+    }
+    .back-to-top.show { opacity: 1; visibility: visible; transform: none; }
+
+    @media (max-width: 1199.98px) {
+      .navbar-collapse {
+        margin-top: .8rem;
+        padding: .85rem;
+        border: 1px solid var(--tcell-border);
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .hero { min-height: auto; padding-top: 130px; }
+      .science-visual { max-width: 460px; margin: 3rem auto 0; }
+      .dashboard-copy { padding: 2.2rem; }
+      .dashboard-panel { padding: 2rem; }
+    }
+
+    @media (max-width: 767.98px) {
+      .section-space { padding: 64px 0; }
+      .hero { padding: 112px 0 64px; }
+      .hero h1 { font-size: clamp(2.15rem, 10.5vw, 3.35rem); line-height: 1.12; }
+      .hero h1 span { font-size: clamp(.92rem, 4.2vw, 1.15rem); line-height: 1.4; }
+      .hero-copy { font-size: 1rem; }
+      .hero-actions .btn { width: 100%; }
+      .hero-trust { gap: .65rem; font-size: .8rem; }
+      .hero-trust span { width: 100%; }
+      .science-visual { max-width: 250px; margin-top: 1.5rem; }
+      .float-chip { padding: .5rem .65rem; font-size: .72rem; }
+      .dashboard-copy, .dashboard-panel { padding: 1.4rem; }
+      .evidence-label { align-items: flex-start; gap: .55rem; }
+      .evidence-label .badge { white-space: normal; text-align: right; line-height: 1.25; }
+      .brand-subtitle { display: none; }
+      .navbar-brand { max-width: calc(100% - 58px); }
+      .brand-title { white-space: normal; line-height: 1.2; }
+      .feature-card, .mission-card { height: 100%; }
+      footer .col-6 { width: 100%; }
+      .footer-bottom { font-size: .82rem; }
+    }
+
+    @media (max-width: 420px) {
+      .navbar .container { padding-left: .75rem; padding-right: .75rem; }
+      .brand-title { font-size: .8rem; }
+      .brand-mark { width: 38px; height: 38px; flex: 0 0 38px; }
+      .hero { padding-top: 104px; }
+      .hero-badge { font-size: .7rem; }
+      .hero h1 { font-size: clamp(2rem, 10vw, 2.7rem); }
+      .science-visual { max-width: 230px; }
+      .float-chip.three { display: none; }
+      .section-title { overflow-wrap: anywhere; }
+    }
+
+
+    /* V1.0-07: mobile navigation hardening */
+    @media (max-width: 1199.98px) {
+      .navbar-shell { z-index: 1050; }
+
+      /* V1.0-13: independent mobile menu.
+         Bootstrap no longer controls mobile open/close. */
+      #mainNavbar {
+        display: none !important;
+        height: auto !important;
+      }
+
+      #mainNavbar.mobile-menu-open {
+        display: block !important;
+      }
+
+      .navbar-collapse {
+        max-height: calc(100vh - 82px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .navbar .nav-link {
+        min-height: 46px;
+        display: flex;
+        align-items: center;
+        padding: .72rem .8rem !important;
+        border-radius: 10px;
+      }
+
+      .navbar .nav-link::after { display: none; }
+
+      .navbar .nav-link:hover,
+      .navbar .nav-link:focus,
+      .navbar .nav-link.active {
+        background: var(--tcell-blue-soft);
+      }
+    }
+
+    @media (max-width: 420px) {
+      .navbar-brand { min-width: 0; }
+      .navbar-brand > span:last-child { min-width: 0; }
+      .brand-title {
+        display: block;
+        overflow-wrap: anywhere;
+      }
+      .navbar-toggler {
+        flex: 0 0 auto;
+        margin-left: .35rem;
+      }
+    }
+
+    /* V1.0-25-01: evidence-library category anchor offset fix.
+       Only changes native hash-jump positioning so fixed navbar does not cover headings. */
+    #library-human,
+    #library-animal,
+    #library-invitro,
+    #library-government,
+    #library-identity {
+      scroll-margin-top: 100px;
+    }
+
+    /* V1.0-26: research history & institution section */
+    #history,
+    #institutions {
+      scroll-margin-top: 100px;
+    }
+
+    .history-timeline {
+      position: relative;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .history-timeline::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 20px;
+      width: 2px;
+      content: "";
+      background: linear-gradient(180deg, rgba(11,79,138,.28), rgba(46,139,103,.45));
+    }
+
+    .history-item {
+      position: relative;
+      padding-left: 58px;
+      margin-bottom: 1.25rem;
+    }
+
+    .history-item:last-child { margin-bottom: 0; }
+
+    .history-dot {
+      position: absolute;
+      top: 1.55rem;
+      left: 8px;
+      width: 26px;
+      height: 26px;
+      border: 6px solid #fff;
+      border-radius: 50%;
+      background: var(--tcell-green);
+      box-shadow: 0 0 0 1px rgba(46,139,103,.26), var(--shadow-sm);
+    }
+
+    .history-card {
+      padding: 1.45rem 1.5rem;
+    }
+
+    .history-date {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      margin-bottom: .7rem;
+      padding: .34rem .72rem;
+      border-radius: 999px;
+      background: var(--tcell-blue-soft);
+      color: var(--tcell-blue-dark);
+      font-size: .82rem;
+      font-weight: 900;
+      letter-spacing: .02em;
+    }
+
+    .history-card h3 {
+      margin-bottom: .7rem;
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--tcell-blue-dark);
+    }
+
+    .history-card p:last-child { margin-bottom: 0; }
+
+    .history-status {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+      margin-top: .85rem;
+    }
+
+    @media (max-width: 575.98px) {
+      .history-timeline::before { left: 14px; }
+      .history-item { padding-left: 43px; }
+      .history-dot {
+        left: 3px;
+        width: 24px;
+        height: 24px;
+      }
+      .history-card { padding: 1.25rem 1.15rem; }
+    }
+
+    /* V1.0-27-01: precise source-record anchor positioning */
+    [id^="source-"] {
+      scroll-margin-top: 110px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">跳到主要內容</a>
+
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-shell" aria-label="主要導覽列">
+      <div class="container py-2">
+        <a class="navbar-brand" href="#top" aria-label="TCELL-1 原生益菌科學資訊中心首頁">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 10c22 10 7 34 28 44M46 10C24 20 39 44 18 54" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+              <path d="M22 18h20M19 29h26M19 40h26M22 51h20" stroke="#9CF0C8" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>
+            <span class="brand-title">TCELL-1 原生益菌科學資訊中心</span>
+            <span class="brand-subtitle">TCELL-1 Research Center</span>
+          </span>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" id="mobileMenuToggle" aria-controls="mainNavbar" aria-expanded="false" aria-label="開啟或關閉導覽選單">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-xl-center">
+            <li class="nav-item"><a class="nav-link active" href="#top" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">首頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="#strain-identity" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">認識 TCELL-1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">科學研究</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dashboard" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">科學證據地圖</a></li>
+            <li class="nav-item"><a class="nav-link" href="#literature" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">文獻與原始資料</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mission" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">關於本站</a></li>
+            <li class="nav-item ms-xl-2 mt-2 mt-xl-0">
+              <a class="btn btn-sm rounded-pill px-3 py-2 text-white" style="background:var(--tcell-green)" href="#latest" onclick="if(window.innerWidth<1200){var m=document.getElementById('mainNavbar');var b=document.getElementById('mobileMenuToggle');if(m){m.classList.remove('mobile-menu-open');m.style.setProperty('display','none','important');}if(b){b.classList.add('collapsed');b.setAttribute('aria-expanded','false');}}">
+                <i class="bi bi-journal-richtext me-1" aria-hidden="true"></i>最新更新
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="hero-badge">
+              <i class="bi bi-shield-check" aria-hidden="true"></i>
+              Evidence First · Transparency Always
+            </span>
+
+            <h1 id="hero-title">
+              TCELL-1 原生益菌<br>科學資訊中心
+              <span><em>Lacticaseibacillus rhamnosus</em> TCELL-1</span>
+            </h1>
+
+            <p class="hero-copy">
+              從菌株身分、人體腸道來源、基礎研究、人體研究到政府核准資料，以原始文件與可查證證據，系統整理 TCELL-1 的科學資料。
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-tcell-primary" href="#strain-identity">
+                認識 TCELL-1 <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+              <a class="btn btn-tcell-outline" href="#dashboard">
+                查看科學證據地圖 <i class="bi bi-bar-chart-line ms-1" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="hero-trust" aria-label="網站資訊原則">
+              <span><i class="bi bi-check-circle-fill text-success" aria-hidden="true"></i>資料來源可追溯</span>
+              <span><i class="bi bi-check-circle-fill text-success" aria-hidden="true"></i>研究證據分級</span>
+              <span><i class="bi bi-check-circle-fill text-success" aria-hidden="true"></i>政府核准資料可查證</span>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="science-visual" aria-hidden="true">
+              <div class="science-orbit"></div>
+              <div class="science-core">
+                <svg viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="dnaA" x1="40" y1="20" x2="210" y2="240" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#C3F8DE"/>
+                      <stop offset="1" stop-color="#48B788"/>
+                    </linearGradient>
+                    <linearGradient id="dnaB" x1="220" y1="20" x2="50" y2="245" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FFFFFF"/>
+                      <stop offset="1" stop-color="#7EC8FF"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M77 22c91 48 14 165 107 216" stroke="url(#dnaA)" stroke-width="15" stroke-linecap="round"/>
+                  <path d="M184 22C93 70 170 187 77 238" stroke="url(#dnaB)" stroke-width="15" stroke-linecap="round"/>
+                  <path d="M93 48h77M78 78h105M72 110h116M72 145h116M78 179h105M92 211h78" stroke="#D9F8EA" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+                  <circle cx="57" cy="61" r="15" fill="#A9F1CF" opacity=".9"/>
+                  <circle cx="211" cy="195" r="11" fill="#83D5FF" opacity=".9"/>
+                  <circle cx="209" cy="70" r="7" fill="#fff" opacity=".8"/>
+                </svg>
+              </div>
+              <div class="float-chip one"><i class="bi bi-dna"></i> 菌株識別</div>
+              <div class="float-chip two"><i class="bi bi-journal-medical"></i> 文獻整理</div>
+              <div class="float-chip three"><i class="bi bi-clipboard2-pulse"></i> 證據分級</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-space bg-white" id="strain-identity" aria-labelledby="strain-identity-title">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-kicker"><i class="bi bi-dna"></i> Strain Identity</span>
+          <h2 class="section-title display-6" id="strain-identity-title">認識 TCELL-1／菌株身分</h2>
+          <p class="section-lead">先從菌株名稱、人體腸道來源背景與名詞定義開始，再逐步連結鑑定、保存、安全性與研究證據。</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <h3>現行菌株名稱</h3>
+              <p class="mb-2"><em>Lacticaseibacillus rhamnosus</em> TCELL-1</p>
+              <p class="text-secondary mb-0">本站首頁與新整理內容採用現行菌名；菌株代號 TCELL-1 不以斜體表示。</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <h3>舊分類名稱與歷史文件</h3>
+              <p class="mb-2"><em>Lactobacillus rhamnosus</em> TCELL-1</p>
+              <p class="text-secondary mb-0">引用早期論文、專利、保存或政府文件時，本站保留原文件所使用的菌名，並與現行名稱並列說明。</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <h3>人體腸道來源背景</h3>
+              <p class="text-secondary mb-0">本站將 TCELL-1 的人體腸道來源背景與後續菌株鑑定、保存及研究資料分開整理；來源細節以可追溯原始文件逐項查核。</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <h3>「原生益菌」在本站的定義</h3>
+              <p class="text-secondary mb-2">本站所稱「原生益菌」，用以描述 TCELL-1 的人體腸道來源背景；「原生益菌」並非國際通用的獨立微生物分類名稱。</p>
+              <p class="text-secondary mb-0">是否符合益生菌的科學條件，應分別依菌株身分、安全性、活性、人體研究及健康效益證據評估。</p>
+            </article>
+          </div>
+        </div>
+
+
+        <div class="text-center mt-5 mb-4 reveal">
+          <span class="section-kicker"><i class="bi bi-clipboard2-check"></i> Identity Evidence</span>
+          <h3 class="section-title h2 mb-2">菌株身分證據整理</h3>
+          <p class="section-lead mb-0">以下依早期專利公開文件，分開呈現鑑定方法、保存資料、人體腸道來源與分子身分證據。</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <h3>菌株鑑定方式</h3>
+              <p class="text-secondary mb-2">專利文件記載以四步驟鑑定 <em>Lactobacillus rhamnosus</em> Tcell-1：</p>
+              <ul class="text-secondary mb-0 ps-3">
+                <li>API 50CHL：發酵／生化反應型態。</li>
+                <li>Ribotyping：限制酶處理與 rDNA probe 之 Southern blot 分型。</li>
+                <li>PCR（Ward &amp; Timmins primers）：主要擴增產物約 290 bp。</li>
+                <li>PCR（Alander primers）：主要擴增產物約 863 bp。</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <h3>菌株保存資料</h3>
+              <p class="text-secondary mb-2">早期專利文件記載下列保存資訊：</p>
+              <ul class="text-secondary mb-0 ps-3">
+                <li><strong>CCRC 910145</strong>：Culture Collection and Research Center（FIRDI），2000 年 4 月 14 日。</li>
+                <li><strong>ATCC PTA-2406</strong>：American Type Culture Collection，2000 年 8 月 22 日。</li>
+                <li>ATCC 保存記載依布達佩斯條約之專利程序用微生物保存制度辦理。</li>
+              </ul>
+              <div class="mt-3">
+                <a class="text-link me-3" href="#source-ccrc-910145">CCRC 來源紀錄 <i class="bi bi-arrow-right"></i></a>
+                <a class="text-link" href="#source-atcc-pta2406">ATCC 來源紀錄 <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <h3>人體腸道來源證據</h3>
+              <p class="text-secondary mb-2">專利實驗例記載 6 名健康成人志願者（25–45 歲），採樣前禁食 12 小時，並以腸鏡自上段空腸與直腸不同位置取得組織切片。</p>
+              <p class="text-secondary mb-0">檢體後續經培養與篩選；其中 MRS agar 與 Rogosa SL agar 用於乳酸桿菌培養，再進一步分離與鑑定。專利正文以「intestinal specimens donated by domestic volunteers」描述來源。</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <h3>菌株身分證明／16S rDNA</h3>
+              <p class="text-secondary mb-2">專利記載將 863 bp PCR 產物進行克隆與定序；其表 2 公布 TCELL-1 的 <strong>776 bp</strong> 序列（SEQ ID No. 1），並與當時 GenBank 可取得的 6 株 <em>L. rhamnosus</em> 序列比較。</p>
+              <p class="text-secondary mb-0"><strong>用詞界線：</strong>這裡可稱為「16S rDNA 片段定序」，不應直接寫成「完整 DNA 定序」或「全基因組定序」。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="dashboard-note mt-4 reveal">
+          <strong>主要原始來源：</strong>US20050074440A1「Lactobacillus rhamnosus strain and uses thereof」專利公開文件。
+          <a class="text-link ms-1" href="https://patents.google.com/patent/US20050074440" target="_blank" rel="noopener noreferrer">查看原始專利文件 <i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+
+        <div class="dashboard-note mt-4 reveal">
+          <strong>閱讀原則：</strong>菌株來源、名稱、保存與鑑定資料用來建立「身分證明」；人體健康效益則需另外依人體研究與整體證據判讀，兩者不直接畫上等號。
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" id="about-tcell" aria-labelledby="features-title">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-kicker"><i class="bi bi-grid-3x3-gap-fill"></i> Explore</span>
+          <h2 class="section-title display-6" id="features-title">六大核心專區</h2>
+          <p class="section-lead">從菌株身分、科學研究、政府核准文件到原始資料與研究歷程，以一致的證據標準整理 TCELL-1 相關資訊。</p>
+        </div>
+
+        <div class="row g-4" id="health">
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-virus2" aria-hidden="true"></i></div>
+              <h3>認識 TCELL-1</h3>
+              <p>整理菌株現行分類與舊名、人體腸道來源、鑑定方式、保存資料，以及「原生益菌」一詞在本站的定義與證據邊界。</p>
+              <a class="text-link" href="#strain-identity">查看菌株資料 <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="feature-card">
+              <div class="feature-icon"><svg aria-hidden="true" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h4"/><path d="M11 3v5"/><path d="M8.5 8h5l1.5 3.5a4 4 0 0 1-3.7 5.5H9"/><path d="M7 10l-2 2"/><path d="M5 12l2 2"/><path d="M6 17h8"/><path d="M4 21h14"/><path d="M16 14h3"/><path d="M18 14v7"/></svg></div>
+              <h3>科學研究</h3>
+              <p>依人體研究、動物研究、體外研究與菌株基礎研究分類，呈現研究設計、主要結果與證據限制。</p>
+              <a class="text-link" href="#research">查看研究整理 <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-patch-check" aria-hidden="true"></i></div>
+              <h3>政府核准與官方文件</h3>
+              <p>收錄衛署健食字第 A00042 號健康食品許可證、展延紀錄及其他可查證之官方文件，並與學術研究證據分開呈現。</p>
+              <a class="text-link" href="#latest">查看官方資料 <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-journals" aria-hidden="true"></i></div>
+              <h3>文獻與原始資料</h3>
+              <p>整理期刊論文、人體研究資料、試驗登錄、研究報告及其他可追溯原始文件。</p>
+              <a class="text-link" href="#literature">前往資料中心 <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-diagram-3" aria-hidden="true"></i></div>
+              <h3>研究歷程與合作機構</h3>
+              <p>依年代整理 TCELL-1 的研究發展、合作機構與重要里程碑，並標示資料來源與查核狀態。</p>
+              <a class="text-link" href="#history">查看研究歷程 <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-heart-pulse" aria-hidden="true"></i></div>
+              <h3>健康與研究主題</h3>
+              <p>依腸道、免疫、代謝及其他研究主題整理相關證據，並清楚標示研究類型、證據層級與研究限制。</p>
+              <a class="text-link" href="#research">瀏覽研究主題 <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space pt-0" id="dashboard" aria-labelledby="dashboard-title">
+      <div class="container">
+        <div class="dashboard-wrap reveal">
+          <div class="row g-0 align-items-stretch">
+            <div class="col-lg-5">
+              <div class="dashboard-copy">
+                <span class="section-kicker text-white-50"><i class="bi bi-diagram-3"></i> Evidence Map</span>
+                <h2 class="display-6 fw-bold mb-3" id="dashboard-title">TCELL-1 科學證據地圖</h2>
+                <p class="mb-4">TCELL-1 的資料來源涵蓋菌株研究、人體研究、動物研究、體外研究及政府核准文件。本區依證據類型分類呈現，並標示原始資料與查核狀態。</p>
+                <a class="btn btn-light rounded-pill px-4 py-2 fw-bold" href="#literature">查看文獻與原始資料</a>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="dashboard-panel">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="evidence-row">
+                      <div class="evidence-label"><span>菌株身分與來源</span><span class="badge rounded-pill badge-soft-green">已有原始資料</span></div>
+                      <p class="small text-secondary mb-0">整理菌株分類、人體腸道來源、鑑定方式與保存資料。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="evidence-row">
+                      <div class="evidence-label"><span>人體研究</span><span class="badge rounded-pill badge-soft-gold">已有資料｜持續查核</span></div>
+                      <p class="small text-secondary mb-0">包含早期人體評估資料及已登錄的人體介入研究，依研究狀態分別呈現。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="evidence-row">
+                      <div class="evidence-label"><span>動物研究</span><span class="badge rounded-pill badge-soft-green">已有研究資料</span></div>
+                      <p class="small text-secondary mb-0">整理動物模型研究，並明確標示其結果不能直接推論人體效果。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="evidence-row">
+                      <div class="evidence-label"><span>體外與菌株特性</span><span class="badge rounded-pill badge-soft-green">已有研究資料</span></div>
+                      <p class="small text-secondary mb-0">整理耐酸膽鹽、附著、抑菌、代謝與菌株基礎研究。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="evidence-row">
+                      <div class="evidence-label"><span>政府核准文件</span><span class="badge rounded-pill badge-soft-blue">原始文件已取得</span></div>
+                      <p class="small text-secondary mb-0">收錄衛署健食字第 A00042 號健康食品許可證及後續展延紀錄。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="evidence-row">
+                      <div class="evidence-label"><span>文獻與原始文件</span><span class="badge rounded-pill badge-soft-gold">持續建檔</span></div>
+                      <p class="small text-secondary mb-0">彙整期刊、研究報告、試驗登錄、官方文件與歷史原始資料。</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dashboard-note">
+                  <strong>證據邊界：</strong>各類資料代表不同證據層級；政府核准、試驗登錄、人體研究、動物研究與體外研究不互相替代，也不直接等同疾病治療效果。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space bg-white" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-8 reveal">
+            <span class="section-kicker"><i class="bi bi-journal-medical"></i> Research</span>
+            <h2 class="section-title display-6 mb-2" id="research-title">科學研究分類</h2>
+            <p class="text-secondary mb-0">不同研究設計能回答不同問題，因此本站分開呈現人體研究、動物研究與體外研究，不把初步研究直接解讀為人體療效。</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0 reveal">
+            <a class="btn btn-outline-primary rounded-pill px-4" href="#literature">查看全部研究</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 reveal">
+            <article class="research-card h-100">
+              <div class="research-thumb"><i class="bi bi-people" aria-hidden="true"></i></div>
+              <div class="card-body">
+                <div class="research-meta">
+                  <span class="badge rounded-pill badge-soft-green">人體研究</span>
+                  <span><i class="bi bi-check-circle me-1"></i>已有資料｜持續查核</span>
+                </div>
+                <h3>人體研究與臨床試驗</h3>
+                <p class="text-secondary">整理早期人體安全性、腸胃功能、腸道存活／持續檢出資料，以及已登錄之臨床試驗；分別標示研究設計、受試者、結果、發表狀態與限制。</p>
+                <p class="small text-secondary mb-3"><strong>證據邊界：</strong>試驗登錄不等同試驗已完成、結果已發表或人體療效已證實。</p>
+                <a class="text-link" href="#human-research">查看人體研究 <i class="bi bi-arrow-down"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 reveal">
+            <article class="research-card h-100">
+              <div class="research-thumb" style="background:linear-gradient(135deg,#11605f,#38a47b)"><i class="bi bi-diagram-3" aria-hidden="true"></i></div>
+              <div class="card-body">
+                <div class="research-meta">
+                  <span class="badge rounded-pill badge-soft-blue">動物研究</span>
+                  <span><i class="bi bi-check-circle me-1"></i>已有研究資料</span>
+                </div>
+                <h3>動物研究與作用機制</h3>
+                <p class="text-secondary">整理 SD 大鼠安全性、腸道菌相與早期腫瘤／免疫探索性動物資料，並區分正式研究報告、學會發表資料與仍待查核內容。</p>
+                <p class="small text-secondary mb-3"><strong>證據邊界：</strong>動物研究不能直接推論人體健康效益或疾病治療效果。</p>
+                <a class="text-link" href="#animal-research">查看動物研究 <i class="bi bi-arrow-down"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 reveal">
+            <article class="research-card h-100">
+              <div class="research-thumb" style="background:linear-gradient(135deg,#564489,#257ab0)"><i class="bi bi-bounding-box-circles" aria-hidden="true"></i></div>
+              <div class="card-body">
+                <div class="research-meta">
+                  <span class="badge rounded-pill badge-soft-gold">體外／菌株研究</span>
+                  <span><i class="bi bi-check-circle me-1"></i>已有研究資料</span>
+                </div>
+                <h3>體外研究與菌株特性</h3>
+                <p class="text-secondary">整理抗酸、耐膽鹽、抑菌與有機酸產生等體外資料，用於說明菌株的生物學與代謝特性。</p>
+                <p class="small text-secondary mb-3"><strong>證據邊界：</strong>體外培養條件與人體腸道環境不同，不能直接等同人體臨床療效。</p>
+                <a class="text-link" href="#invitro-research">查看體外研究 <i class="bi bi-arrow-down"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="mt-5 pt-2" id="human-research">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-people"></i> Human Evidence</span>
+            <h3 class="section-title h2 mb-2">人體研究與臨床試驗</h3>
+            <p class="section-lead mb-0">現有人體資料包括早期安全性、腸胃功能、腸道存活／持續檢出研究，以及已登錄的 Phase 2 臨床試驗；各類資料分開判讀。</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <h3>早期人體安全性評估</h3>
+                <p class="text-secondary mb-2">健康志願者分為安慰劑、低、中、高劑量四組；完成分析者分別為 8、10、10、10 人，共 38 人。文件記載採雙盲方式進行 4 週，並於第 30 天及停用後第 7 天採集檢體。</p>
+                <p class="text-secondary mb-0"><strong>解讀：</strong>屬早期人體安全性資料；部分檢驗值雖有統計差異，但文件記載仍在正常範圍，且未觀察到過敏或其他不良反應。</p>
+                <div class="mt-3"><a class="text-link" href="#source-human-safety">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <h3>人體腸胃功能評估</h3>
+                <p class="text-secondary mb-2">文件記載相同的四組設計與 4 週雙盲試驗，完成分析者亦為 8、10、10、10 人；並分析糞便菌相與部分腸道菌群變化。</p>
+                <p class="text-secondary mb-0"><strong>待查核：</strong>安全性與腸胃功能章節之受試者人數與流程高度相似，目前不直接視為兩個完全獨立的 38 人臨床試驗；是否為相同或重疊受試者，待原始研究報告確認。</p>
+                <div class="mt-3"><a class="text-link" href="#source-human-gi">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <h3>人體腸道存活／持續檢出</h3>
+                <p class="text-secondary mb-2">8 名健康成人（男 4、女 4）每日食用 4 公克 TCELL-1、連續 1 週；停用後連續數週採集糞便，以培養與 PCR 追蹤菌株。</p>
+                <p class="text-secondary mb-0"><strong>用詞界線：</strong>停用後仍能在部分受試者糞便中持續檢出，可支持「腸道存活／持續存在」；但此方法沒有直接測量腸黏膜附著，因此不直接寫成「已證明定殖」。</p>
+                <div class="mt-3"><a class="text-link" href="#source-human-survival">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <h3>NCT05570942 登錄臨床試驗</h3>
+                <p class="text-secondary mb-2">公開試驗登錄為 Phase 2 人體介入研究，研究對象為接受輔助化療之第三期大腸直腸癌患者；計畫收案 56 人，採隨機、安慰劑對照與雙盲設計。</p>
+                <p class="text-secondary mb-2"><strong>目前標示：</strong>已登錄人體臨床試驗；研究結果與正式發表狀態持續查核。</p>
+                <a class="text-link me-3" href="#source-nct05570942">查看來源紀錄 <i class="bi bi-arrow-right"></i></a>
+                <a class="text-link" href="https://clinicaltrials.gov/study/NCT05570942" target="_blank" rel="noopener noreferrer">查看 ClinicalTrials.gov 登錄 <i class="bi bi-box-arrow-up-right"></i></a>
+              </article>
+            </div>
+          </div>
+
+          <div class="dashboard-note mt-4 reveal">
+            <strong>人體研究證據邊界：</strong>人體研究的證據力取決於研究設計、樣本數、對照方式、統計分析、是否完成以及是否經正式發表。試驗登錄本身不等同療效已獲證實。
+          </div>
+        </div>
+
+        <div class="mt-5 pt-2" id="animal-research">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-diagram-3"></i> Animal Evidence</span>
+            <h3 class="section-title h2 mb-2">動物研究</h3>
+            <p class="section-lead mb-0">動物資料可用於安全性、腸道菌相與作用機制探索，但不直接等同人體健康效益。</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-4 reveal">
+              <article class="feature-card h-100">
+                <h3>SD 大鼠安全性評估</h3>
+                <p class="text-secondary mb-2">早期資料記載以 80 隻 SD 大鼠進行 4 週安全性試驗，分為對照、低、中、高劑量四組，每組 20 隻，公母各 10 隻；觀察體重、血液學、血清生化及病理組織。</p>
+                <p class="text-secondary mb-0">另包含微生物基因突變、動物體內微核與體外染色體結構變異等基因毒性評估。結果應以原始試驗報告為準，不代表所有長期風險均已排除。</p>
+                <div class="mt-3"><a class="text-link" href="#source-animal-safety">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 reveal">
+              <article class="feature-card h-100">
+                <h3>SD 大鼠腸道菌相研究</h3>
+                <p class="text-secondary mb-2">40 隻、6 週齡雄性 SD 大鼠隨機分為四組，每組 10 隻。研究分析糞便與盲腸菌相；文件記載部分劑量組的 Bifidobacteria 增加、Enterobacteriaceae 降低並達統計差異。</p>
+                <p class="text-secondary mb-0"><strong>解讀：</strong>屬動物腸道菌相研究，不能直接等同人體腸道菌相改善。</p>
+                <div class="mt-3"><a class="text-link" href="#source-animal-microbiota">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 reveal">
+              <article class="feature-card h-100">
+                <h3>腫瘤與免疫探索性動物研究</h3>
+                <p class="text-secondary mb-2">藍皮書收錄 B16-F10 黑色素瘤轉移模型，以及 A549、Smmu7721、A498 等腫瘤模型之早期學會發表資料；部分模型曾報告腫瘤生長／轉移與 IgA、IgM、IL-2、IL-4、IL-10 等指標變化。</p>
+                <p class="text-secondary mb-0"><strong>證據定位：</strong>現階段列為「學會發表資料／藍皮書收錄之探索性動物研究」，不可解讀為已證實可預防或治療人體癌症，也不直接視為同儕審查期刊論文。</p>
+                <div class="mt-3"><a class="text-link" href="#source-animal-meeting">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="dashboard-note mt-4 reveal">
+            <strong>動物研究證據邊界：</strong>動物研究可用於安全性、作用機制與生物學可行性探索，但不能直接證明人體健康效益或疾病治療效果；腫瘤模型尤其應與人體臨床證據分開呈現。
+          </div>
+        </div>
+
+        <div class="mt-5 pt-2" id="invitro-research">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-bounding-box-circles"></i> In Vitro Evidence</span>
+            <h3 class="section-title h2 mb-2">體外研究與菌株特性</h3>
+            <p class="section-lead mb-0">體外研究用於觀察菌株在控制條件下的耐受性、抑菌活性與代謝特性，不能直接外推成人體效果。</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-4 reveal">
+              <article class="feature-card h-100">
+                <h3>抗酸與耐膽鹽</h3>
+                <p class="text-secondary mb-2">早期體外培養試驗觀察 TCELL-1 在低 pH 與含膽鹽環境中的生長反應；資料記載 pH 2.5 條件下生長明顯停頓，恢復至 pH 6 後仍可繼續生長，且在 0.3%～0.4% 膽鹽環境中仍可生長。</p>
+                <p class="text-secondary mb-0"><strong>解讀：</strong>支持菌株具有一定酸／膽鹽耐受性，但不能單獨證明人體腸道定殖或健康效益。</p>
+                <div class="mt-3"><a class="text-link" href="#source-acid-bile">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 reveal">
+              <article class="feature-card h-100">
+                <h3>抑制 14 種測試菌株</h3>
+                <p class="text-secondary mb-2">早期培養皿試驗以 17 株測試菌進行觀察，其中 14 株出現明顯抑菌圈，文件列舉赤痢菌、金黃色葡萄球菌及糞腸球菌等。</p>
+                <p class="text-secondary mb-0"><strong>用詞界線：</strong>這代表體外抑菌活性；是否能在人體腸道中產生相同效果，需另以人體研究驗證。</p>
+                <div class="mt-3"><a class="text-link" href="#source-tsinghua-00537">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4 reveal">
+              <article class="feature-card h-100">
+                <h3>有機酸產生能力</h3>
+                <p class="text-secondary mb-2">早期體外培養資料將 TCELL-1 於 5 種供試配方中培養 14 小時，分析菌數、pH、醋酸、乳酸與丙酮酸等指標。</p>
+                <p class="text-secondary mb-0"><strong>用詞界線：</strong>體外產酸可作為菌株代謝特性的證據，但不能由此直接推論人體排便或腸胃症狀改善。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="dashboard-note mt-4 reveal">
+            <strong>體外研究證據邊界：</strong>實驗室培養條件與人體腸道環境不同。人體糞便中的持續檢出已歸入人體研究；BFTC905 等癌細胞相關資料在原始研究類型尚未完成核對前，不自行改列為體外癌細胞研究。
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" id="latest" aria-labelledby="latest-title">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-kicker"><i class="bi bi-clock-history"></i> Latest Evidence &amp; Updates</span>
+          <h2 class="section-title display-6" id="latest-title">最新研究與資料更新</h2>
+          <p class="section-lead">優先呈現新增的研究登錄、同儕審查文獻與政府核准原始文件；網站建置紀錄另行保存，不與科學證據混列。</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="research-card h-100">
+              <div class="card-body">
+                <div class="research-meta">
+                  <span class="badge rounded-pill badge-soft-blue">政府核准文件</span>
+                  <span>原始文件已取得</span>
+                </div>
+                <h3>衛署健食字第 A00042 號許可證與展延紀錄</h3>
+                <p class="text-secondary">已建檔健康食品許可證及展延紀錄。原始許可文件記載原料成分包含 Lactobacillus rhamnosus Tcell-1；證書核准保健功效為「本產品有助於增加腸內益生菌」。政府核准資料與學術研究證據分開呈現。</p>
+                <a class="text-link me-3" href="#source-a00042">查看許可證來源 <i class="bi bi-arrow-right"></i></a>
+                <a class="text-link" href="#source-a00042-extension">查看展延紀錄 <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="research-card h-100">
+              <div class="card-body">
+                <div class="research-meta">
+                  <span class="badge rounded-pill badge-soft-green">人體研究｜試驗登錄</span>
+                  <span>NCT05570942</span>
+                </div>
+                <h3>ClinicalTrials.gov：NCT05570942</h3>
+                <p class="text-secondary">台大醫院登錄之 TCELL-1 人體介入研究。試驗登錄可證明研究已正式登錄，但不等同試驗已完成、結果已發表或療效已證實。</p>
+                <a class="text-link" href="https://clinicaltrials.gov/study/NCT05570942" target="_blank" rel="noopener noreferrer">查看研究登錄 <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="research-card h-100">
+              <div class="card-body">
+                <div class="research-meta">
+                  <span class="badge rounded-pill badge-soft-gold">動物研究｜Peer-reviewed</span>
+                  <span>2025</span>
+                </div>
+                <h3>高脂飲食大鼠之血脂與肝臟相關研究</h3>
+                <p class="text-secondary">2025 年同儕審查研究評估 Lactobacillus rhamnosus TCELL 於高脂飲食大鼠模型的影響。現階段列為 TCELL 相關動物研究；在 TCELL 與 TCELL-1 的直接菌株身分證據鏈完成核對前，不作為 TCELL-1 人體療效證據。</p>
+                <a class="text-link me-3" href="#source-2025-tcell">查看來源紀錄 <i class="bi bi-arrow-right"></i></a>
+                <a class="text-link" href="https://doi.org/10.1155/grp/5540686" target="_blank" rel="noopener noreferrer">查看期刊研究 <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space bg-white" id="literature" aria-labelledby="literature-title">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-8 reveal">
+            <span class="section-kicker"><i class="bi bi-book"></i> Evidence &amp; Source Library</span>
+            <h2 class="section-title display-6 mb-2" id="literature-title">文獻與原始資料中心</h2>
+            <p class="text-secondary mb-0">以「來源紀錄卡」整理 TCELL-1 相關人體研究、動物研究、體外／菌株研究、政府核准文件與菌株身分文件；每筆資料分開標示來源、可支持的結論、證據邊界與查核狀態。</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0 reveal">
+            <span class="badge rounded-pill badge-soft-green px-3 py-2">V1.0-25｜持續查核</span>
+          </div>
+        </div>
+
+        <div class="dashboard-note mb-5 reveal">
+          <strong>資料中心閱讀方式：</strong>「原始文件已取得」、「公開登錄可查」、「藍皮書收錄／原始報告待核對」與「學會資料／正式全文待查核」代表不同的可追溯程度；查核標籤不是研究品質評分，也不代表人體療效已獲確認。
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 justify-content-center mb-5 reveal">
+          <a class="btn btn-outline-primary rounded-pill px-3" href="#library-human">人體研究</a>
+          <a class="btn btn-outline-primary rounded-pill px-3" href="#library-animal">動物研究</a>
+          <a class="btn btn-outline-primary rounded-pill px-3" href="#library-invitro">體外／菌株研究</a>
+          <a class="btn btn-outline-primary rounded-pill px-3" href="#library-government">政府核准文件</a>
+          <a class="btn btn-outline-primary rounded-pill px-3" href="#library-identity">菌株身分／專利／保存</a>
+        </div>
+
+        <div id="library-human" class="pt-2">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-people"></i> Human Sources</span>
+            <h3 class="section-title h2 mb-2">人體研究與試驗登錄</h3>
+            <p class="section-lead mb-0">把早期人體研究、人體腸道持續檢出資料與公開試驗登錄分開呈現。</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-human-safety">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-green">人體研究｜安全性</span>
+                  <span>藍皮書收錄｜原始完整報告待核對</span>
+                </div>
+                <h3>「TCELL-1 原生益菌」人體安全性評估</h3>
+                <p class="text-secondary"><strong>來源／單位：</strong>中國醫藥學院附設醫院，楊美都；現有參考資料未明確標出年份。</p>
+                <p class="text-secondary"><strong>研究設計：</strong>健康志願者分為安慰劑、低、中、高劑量；完成分析者 8、10、10、10 人，共 38 人。文件記載採雙盲方式進行 4 週，並於第 30 天及停用後第 7 天採集檢體。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>提供早期短期人體安全性觀察，包括血液、生化、尿液、過敏與不良反應等資料。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>不能由此推論所有族群、所有劑量或長期使用均已證明安全。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-human-gi">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-green">人體研究｜腸胃功能</span>
+                  <span>受試者是否重疊待確認</span>
+                </div>
+                <h3>「TCELL-1 原生益菌」人體腸胃功能改善評估</h3>
+                <p class="text-secondary"><strong>來源／單位：</strong>中國醫藥學院附設醫院，楊美都；現有參考資料未明確標出年份。</p>
+                <p class="text-secondary"><strong>研究設計：</strong>四組設計、完成者同為 8、10、10、10 人，雙盲 4 週，並分析糞便菌相與部分腸道菌群變化。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>原資料記載部分時間點與劑量組的腸道菌相指標出現統計差異。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>安全性與腸胃功能兩章的人數與流程高度相似，目前不直接視為兩個完全獨立的 38 人試驗；是否為相同或重疊受試者，待原始研究報告確認。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-human-survival">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-green">人體研究｜腸道持續檢出</span>
+                  <span>藍皮書附錄資料</span>
+                </div>
+                <h3>人體腸道存活／持續檢出試驗</h3>
+                <p class="text-secondary"><strong>研究設計：</strong>8 名健康成人（男 4、女 4），每日食用 4 公克 TCELL-1、連續 1 週；停用後連續數週採集糞便，以培養及 PCR 追蹤菌株。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>文件報告部分受試者停用後第 2、甚至第 3 週仍可在糞便中檢出 TCELL-1。</p>
+                <p class="small text-secondary mb-0"><strong>用詞界線：</strong>本站使用「腸道存活／持續檢出」；糞便培養與 PCR 並未直接測量腸黏膜附著，因此不直接寫成「已證明黏附／定殖」。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-nct05570942">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-green">公開試驗登錄</span>
+                  <span>NCT05570942｜結果持續查核</span>
+                </div>
+                <h3>ClinicalTrials.gov：NCT05570942</h3>
+                <p class="text-secondary"><strong>研究性質：</strong>Phase 2 人體介入研究；研究對象為接受輔助化療之第三期大腸直腸癌患者，計畫收案 56 人，採隨機、安慰劑對照與雙盲設計。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>TCELL-1 已有正式登錄的 Phase 2 人體研究。</p>
+                <p class="small text-secondary mb-3"><strong>證據邊界：</strong>試驗登錄不等同研究已完成、結果為陽性或人體療效已獲證實；研究結果與正式發表狀態持續查核。</p>
+                <a class="text-link" href="https://clinicaltrials.gov/study/NCT05570942" target="_blank" rel="noopener noreferrer">查看 ClinicalTrials.gov <i class="bi bi-box-arrow-up-right"></i></a>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div id="library-animal" class="mt-5 pt-3">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-diagram-3"></i> Animal Sources</span>
+            <h3 class="section-title h2 mb-2">動物研究報告</h3>
+            <p class="section-lead mb-0">區分正式研究報告、工作報告、學會發表資料與菌株身分仍待連結確認的期刊研究。</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-animal-safety">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">動物安全性｜2002</span>
+                  <span>完整原始報告待建檔</span>
+                </div>
+                <h3>TCELL-1 乳酸菌粉之健康食品第二類安全性評估試驗</h3>
+                <p class="text-secondary"><strong>研究者／單位：</strong>吳銘芳，台大醫學院實驗動物中心。</p>
+                <p class="text-secondary"><strong>研究設計：</strong>80 隻 SD 大鼠，分對照、低、中、高劑量四組，每組 20 隻，公母各 10 隻；連續 4 週，觀察體重、血液學、血清生化與病理組織。</p>
+                <p class="text-secondary mb-2"><strong>另含：</strong>微生物基因突變、動物體內微核及體外染色體結構變異等基因毒性評估。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>屬早期動物短期安全性資料，不能直接證明人體長期安全性。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-animal-microbiota">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">腸道菌相｜2000</span>
+                  <span>工作報告號可追溯</span>
+                </div>
+                <h3>TCELL-1 純乳酸菌粉對 SD 大鼠腸道菌相之影響</h3>
+                <p class="text-secondary"><strong>來源：</strong>食品工業發展研究所；工作報告第 89-1619 號，食研企字第 00369 號。</p>
+                <p class="text-secondary"><strong>研究設計：</strong>40 隻 6 週齡雄性 SD 大鼠，隨機分為四組，每組 10 隻；分析糞便與盲腸菌相。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>原資料記載部分劑量組的 Bifidobacteria 增加、Enterobacteriaceae 降低並達統計差異。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>不能直接寫成「已證明人體腸道菌相改善」。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-animal-meeting">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">腫瘤／免疫探索</span>
+                  <span>學會發表／投影片資料</span>
+                </div>
+                <h3>2003–2004 日本學會動物研究資料</h3>
+                <p class="text-secondary"><strong>資料性質：</strong>藍皮書收錄第 62、63 屆癌學總會及 2004 年日本實驗動物科學・技術發表會相關內容；並註明內容節錄自吳銘芳博士赴日發表之投影片。</p>
+                <p class="text-secondary"><strong>研究模型：</strong>B16-F10 黑色素瘤轉移模型，以及 A549、Smmu7721、A498 等腫瘤模型；另記載 IgA、IgM、IL-2、IL-4、IL-10 等免疫指標。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>現階段視為探索性動物／學會資料，不直接視為同儕審查期刊論文，也不能推論人體癌症預防或治療效果。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-2025-tcell">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">Peer-reviewed｜2025</span>
+                  <span>TCELL 相關｜身分連結待確認</span>
+                </div>
+                <h3><i>Lactobacillus rhamnosus</i> Ameliorates Dyslipidemia and Liver Injury in High-Fat-Diet-Fed Rats</h3>
+                <p class="text-secondary"><strong>作者／期刊：</strong>Y.-T. Liao 等；<em>Gastroenterology Research and Practice</em>，2025，Article 5540686。</p>
+                <p class="text-secondary mb-2"><strong>研究內容：</strong>高脂飲食大鼠模型，文中菌株標示為 <em>L. rhamnosus</em> TCELL，研究血脂與肝臟相關指標。</p>
+                <p class="small text-secondary mb-3"><strong>重要註記：</strong>目前列為「TCELL 相關動物研究」；在 TCELL 與 TCELL-1 的直接菌株身分證據鏈完成核對前，不併入 TCELL-1 的直接證據。</p>
+                <a class="text-link me-3" href="https://doi.org/10.1155/grp/5540686" target="_blank" rel="noopener noreferrer">DOI <i class="bi bi-box-arrow-up-right"></i></a>
+                <a class="text-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12537184/" target="_blank" rel="noopener noreferrer">PMC 全文 <i class="bi bi-box-arrow-up-right"></i></a>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div id="library-invitro" class="mt-5 pt-3">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-bounding-box-circles"></i> In Vitro &amp; Strain Sources</span>
+            <h3 class="section-title h2 mb-2">體外／菌株研究報告</h3>
+            <p class="section-lead mb-0">依「菌株鑑定 → 酸／膽鹽耐受 → 體外抑菌 → 代謝／有機酸」建立來源鏈。</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-tsinghua-00537">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">菌株鑑定｜2001</span>
+                  <span>清華大學研究報告</span>
+                </div>
+                <h3>本土乳酸桿菌 <i>Lactobacillus rhamnosus</i> TCELL1 的篩選與鑑定及其一些相關特徵</h3>
+                <p class="text-secondary"><strong>研究者／單位：</strong>林冠賢、黃健行、王競平、林志侯；國立清華大學；（90）清生科系字第 00537 號。</p>
+                <p class="text-secondary mb-2"><strong>分子資料：</strong>文件記載以 PCR 與 DNA 定序取得約 863 bp 的 16S rDNA 片段，並使用 16S+23S rDNA probe 進行 ribotyping 比較。</p>
+                <p class="small text-secondary mb-0"><strong>用詞界線：</strong>這是 16S rDNA 片段與分型資料，不寫成「完整 DNA 定序」或「全基因組定序」。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-acid-bile">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">體外耐受性</span>
+                  <span>清華大學（90）00537 號</span>
+                </div>
+                <h3>抗酸與耐膽鹽體外試驗</h3>
+                <p class="text-secondary"><strong>方法／結果：</strong>文件記載 pH 2.5 條件下 TCELL-1 生長明顯停頓，恢復至 pH 6 後仍可繼續生長；並在 0.3%～0.4% 膽鹽條件下觀察到生長。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>TCELL-1 在控制的體外條件下具有一定酸與膽鹽耐受性。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>不能由此單獨推論一定能在人體腸道定殖或產生健康效益。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">體外抑菌</span>
+                  <span>14／17 測試菌株有抑菌圈</span>
+                </div>
+                <h3>17 株測試菌之培養皿抑菌試驗</h3>
+                <p class="text-secondary"><strong>來源：</strong>清華大學（90）清生科系字第 00537 號。</p>
+                <p class="text-secondary"><strong>研究方法：</strong>以 17 株測試菌進行培養皿試驗，加入 TCELL-1 培養 72 小時之菌液，37°C 培養 24 小時後觀察抑菌圈。</p>
+                <p class="text-secondary mb-2"><strong>原資料：</strong>其中 14 株出現明顯抑菌圈，文件列舉赤痢菌、金黃色葡萄球菌與糞腸球菌等。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>這是體外抑菌活性，不能寫成「已證明在人體內消滅 14 種病原菌」。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">代謝特性｜2001</span>
+                  <span>食研菌字第 02542 號</span>
+                </div>
+                <h3>總乳酸菌計數、溫度、酸鹼值、有機酸之分析</h3>
+                <p class="text-secondary"><strong>來源：</strong>食品工業發展研究所委託試驗報告書。</p>
+                <p class="text-secondary"><strong>研究內容：</strong>以 5 組供試配方培養 TCELL-1 14 小時，分析菌數、pH、醋酸、乳酸與丙酮酸等指標。</p>
+                <p class="text-secondary mb-2"><strong>可支持：</strong>TCELL-1 在體外培養條件下可產生乳酸等有機酸，屬菌株代謝特性資料。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>不能單靠體外有機酸資料直接證明人體排便改善或腸胃症狀療效。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div id="library-government" class="mt-5 pt-3">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-patch-check"></i> Government &amp; Official Documents</span>
+            <h3 class="section-title h2 mb-2">政府核准與官方文件</h3>
+            <p class="section-lead mb-0">政府核准資料用來呈現特定產品的許可範圍、原料身分與行政效期，與學術研究證據分開判讀。</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-a00042">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">政府核准文件</span>
+                  <span>原始許可證已取得</span>
+                </div>
+                <h3>衛署健食字第 A00042 號健康食品許可證</h3>
+                <p class="text-secondary mb-2"><strong>文件意義：</strong>該產品曾通過健康食品個案審查並取得 A00042 號許可。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>產品獲准不等同 TCELL-1 對所有疾病或所有健康議題均具有人體療效。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">證書核准文字</span>
+                  <span>不得超出許可範圍</span>
+                </div>
+                <h3>核准保健功效</h3>
+                <p class="text-secondary mb-2"><strong>證書文字：</strong>「本產品有助於增加腸內益生菌。」</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>此核准文字不等同「免疫調節」、「抗癌」、「調節血脂」或其他未列於許可證之醫療／健康功效。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">原料身分連結</span>
+                  <span>A00042 ↔ Tcell-1</span>
+                </div>
+                <h3>原料成分中的 Tcell-1</h3>
+                <p class="text-secondary mb-2">原始許可文件記載原料成分包含 <em>Lactobacillus rhamnosus</em> Tcell-1，可建立「A00042 核准產品」與 Tcell-1 菌株之直接文件連結。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>產品許可與菌株本身的所有科學研究主張仍應分開判讀。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-a00042-extension">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-blue">官方展延文件</span>
+                  <span>效期至民國 118 年 2 月 20 日</span>
+                </div>
+                <h3>健康食品許可證展延紀錄</h3>
+                <p class="text-secondary mb-2">目前建檔之官方展延文件顯示效期至民國 118 年 2 月 20 日。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>展延代表許可證效期之行政延續，不等同新增、擴大或重新證明其他保健功效。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="dashboard-note mt-4 reveal">
+            <strong>政府核准證據邊界：</strong>健康食品許可證證明的是特定產品在核准範圍內取得許可；不代表政府核准該菌株對癌症、免疫、血脂或其他疾病具有治療效果。
+          </div>
+        </div>
+
+        <div id="library-identity" class="mt-5 pt-3">
+          <div class="text-center mb-4 reveal">
+            <span class="section-kicker"><i class="bi bi-fingerprint"></i> Identity, Patent &amp; Deposits</span>
+            <h3 class="section-title h2 mb-2">菌株身分／專利／保存文件</h3>
+            <p class="section-lead mb-0">專利、保存編號與分子鑑定資料用來建立菌株來源與身分證據鏈，不取代安全性或人體健康效益研究。</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-us-patent">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">專利公開文件</span>
+                  <span>原始全文可查</span>
+                </div>
+                <h3>US20050074440A1：<i>Lactobacillus rhamnosus strain and uses thereof</i></h3>
+                <p class="text-secondary mb-2">美國專利公開申請文件記載 Tcell-1 的分離、鑑定、PCR、ribotyping、16S rDNA 定序、保存編號及部分菌株特性。</p>
+                <p class="small text-secondary mb-3"><strong>用詞界線：</strong>本站稱為「專利公開文件／公開申請」，不把公開申請號本身寫成「美國已核准專利」。專利文件也不是人體臨床療效證明。</p>
+                <a class="text-link" href="https://patents.google.com/patent/US20050074440" target="_blank" rel="noopener noreferrer">查看 Google Patents <i class="bi bi-box-arrow-up-right"></i></a>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-ccrc-910145">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">菌株保存紀錄</span>
+                  <span>CCRC 910145</span>
+                </div>
+                <h3>Culture Collection and Research Center（FIRDI）</h3>
+                <p class="text-secondary mb-2">早期專利文件記載 TCELL-1 於 2000 年 4 月 14 日保存，編號 <strong>CCRC 910145</strong>；藍皮書另記載保存證明 FP000053 與存活證明 000055。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>保存編號用於建立菌株可追溯性，本身不代表人體健康功效已獲證實。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100" id="source-atcc-pta2406">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">國際保存紀錄</span>
+                  <span>ATCC PTA-2406</span>
+                </div>
+                <h3>American Type Culture Collection（ATCC）</h3>
+                <p class="text-secondary mb-2">早期專利文件記載 TCELL-1 於 2000 年 8 月 22 日保存於 ATCC，編號 <strong>PTA-2406</strong>，並依布達佩斯條約之專利程序用微生物保存制度辦理。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>ATCC 保存不等於 ATCC 對療效、安全性或商品功效背書。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">分子身分證據</span>
+                  <span>16S rDNA 片段｜非全基因組</span>
+                </div>
+                <h3>PCR、Ribotyping 與 16S rDNA 片段定序</h3>
+                <p class="text-secondary mb-2">專利記載 Ward &amp; Timmins primers 主要擴增產物約 290 bp；Alander primers 主要擴增產物約 863 bp，後者再進行 cloning 與 sequencing。專利表 2 公布 TCELL-1 的 776 bp 序列（SEQ ID No. 1）。</p>
+                <p class="small text-secondary mb-0"><strong>用詞界線：</strong>本站固定稱「16S rDNA 片段定序」，不寫成「完整 DNA 定序」或「全基因組定序」。</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 reveal">
+              <article class="feature-card h-100">
+                <div class="research-meta mb-3">
+                  <span class="badge rounded-pill badge-soft-gold">人體腸道來源</span>
+                  <span>專利實驗例可追溯</span>
+                </div>
+                <h3>健康成人腸道檢體之分離來源</h3>
+                <p class="text-secondary mb-2">專利實驗例記載 6 名健康成人志願者（25–45 歲），採樣前禁食 12 小時，經內視鏡取得腸道組織檢體，再經培養、篩選與鑑定。</p>
+                <p class="small text-secondary mb-0"><strong>證據邊界：</strong>可支持 TCELL-1 的人體腸道來源背景；「人體來源」本身不能證明一定優於其他菌株，也不能取代人體健康效益證據。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="dashboard-note mt-4 reveal">
+            <strong>菌株身分證據邊界：</strong>專利、保存編號、PCR、ribotyping 與 16S rDNA 定序可用來建立菌株來源與身分證據鏈；但這些資料不能取代安全性試驗、人體研究或健康效益證據。
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" id="history" aria-labelledby="history-title">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-8 reveal">
+            <span class="section-kicker"><i class="bi bi-clock-history"></i> Research History &amp; Institutions</span>
+            <h2 class="section-title display-6 mb-2" id="history-title">研究歷程與合作／研究機構</h2>
+            <p class="text-secondary mb-0">依可追溯文件、研究報告、公開登錄與學會資料整理 TCELL-1 的研究發展；有明確日期才列日期，來源未標日期者不自行補寫。</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0 reveal">
+            <span class="badge rounded-pill badge-soft-green px-3 py-2">V1.0-26｜持續查核</span>
+          </div>
+        </div>
+
+        <div class="dashboard-note mb-4 reveal">
+          <strong>查核狀態：</strong>
+          <span class="badge rounded-pill badge-soft-blue ms-1">原始文件已取得</span>
+          <span class="badge rounded-pill badge-soft-green ms-1">研究報告可追溯</span>
+          <span class="badge rounded-pill badge-soft-gold ms-1">公開資料可查</span>
+          <span class="badge rounded-pill bg-light text-dark border ms-1">學會資料／投影片</span>
+          <span class="badge rounded-pill bg-light text-dark border ms-1">待原始資料確認</span>
+          <div class="small text-secondary mt-2">查核標籤表示資料可追溯程度，不是研究品質評分，也不代表人體療效已獲確認。</div>
+        </div>
+
+        <div class="text-center mt-5 mb-4 reveal">
+          <span class="section-kicker"><i class="bi bi-signpost-split"></i> Timeline</span>
+          <h3 class="section-title h2 mb-2">TCELL-1 研究歷程時間軸</h3>
+          <p class="section-lead mb-0">研究完成、學會發表、政府核准、臨床試驗登錄與同儕審查期刊發表屬不同證據類型，本站分開標示。</p>
+        </div>
+
+        <div class="history-timeline">
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2000</span>
+              <h3>菌株保存與早期動物研究</h3>
+              <p class="text-secondary mb-2">4 月 14 日：TCELL-1 保存於 CCRC，編號 <strong>CCRC 910145</strong>；8 月 22 日：保存於 ATCC，編號 <strong>PTA-2406</strong>。</p>
+              <p class="text-secondary mb-2">同年食品工業發展研究所完成「TCELL-1 純乳酸菌粉對 SD 大鼠腸道菌相之影響」，工作報告第 89-1619 號／食研企字第 00369 號。</p>
+              <p class="small text-secondary mb-0"><strong>證據邊界：</strong>菌株保存建立可追溯身分；保存本身不等同健康效益證明。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-blue">原始保存紀錄</span>
+                <span class="badge rounded-pill badge-soft-green">研究報告可追溯</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2001.02.08</span>
+              <h3>菌株篩選、鑑定與基礎特性研究</h3>
+              <p class="text-secondary mb-2">國立清華大學（90）清生科系字第 00537 號，整理 TCELL-1 的篩選、鑑定、PCR／16S rDNA、ribotyping，以及抗酸、耐膽鹽等菌株基礎特性。</p>
+              <p class="text-secondary mb-2">食品工業發展研究所另有 2001 年「總乳酸菌計數、溫度、酸鹼值、有機酸之分析」，食研菌字第 02542 號。</p>
+              <p class="small text-secondary mb-0"><strong>用詞界線：</strong>16S rDNA 為片段定序與分型資料，不寫成「全基因組定序」。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-green">研究報告可追溯</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2002</span>
+              <h3>動物安全性、食研分析與品質評選階段</h3>
+              <p class="text-secondary mb-2">台大醫學院實驗動物中心吳銘芳進行「TCELL-1 乳酸菌粉之健康食品第二類安全性評估試驗」。食品工業發展研究所同年另有總乳酸菌數與免疫樣品分析資料。</p>
+              <p class="text-secondary mb-2">藍皮書另收錄 2002 國家生技醫療品質入圍獎資料；本站將獎項紀錄與研究證據分開呈現。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-green">研究報告可追溯</span>
+                <span class="badge rounded-pill bg-light text-dark border">獎項資料另列</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2003</span>
+              <h3>人體研究與學會發表</h3>
+              <p class="text-secondary mb-2">藍皮書時間資料記載：9 月 25 日日本名古屋第 62 屆癌學會相關發表；10 月 25 日中國醫藥學院附設醫院人體安全性研究；11 月 14 日第二屆亞洲乳酸菌協會台北發表之抗菌物質研究。</p>
+              <p class="small text-secondary mb-0"><strong>查核提醒：</strong>人體安全性與腸胃功能研究在參考文獻中沒有分別標示完整年份，因此不把所有人體研究一律定為 2003；完整原始報告仍待建檔核對。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill bg-light text-dark border">部分確認</span>
+                <span class="badge rounded-pill bg-light text-dark border">原始報告待核對</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2004</span>
+              <h3>A00042 核准與日本長崎動物研究發表</h3>
+              <p class="text-secondary mb-2">藍皮書時間資料記載 2 月 20 日取得衛署健食字第 <strong>A00042</strong> 號健康食品認證；這是早期核准日期，與目前建檔之展延效期「民國 118 年 2 月 20 日」分開判讀。</p>
+              <p class="text-secondary mb-2">5 月 20 日，日本長崎實驗動物科學・技術發表會資料包含 B16-F10、A549、Smmu7721、A498 等動物模型與免疫指標；藍皮書註明相關內容節錄自吳銘芳博士赴日學會發表投影片。</p>
+              <p class="small text-secondary mb-0"><strong>證據邊界：</strong>學會／投影片資料不直接視為完整同儕審查期刊論文，也不能推論人體癌症療效。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-blue">政府核准紀錄</span>
+                <span class="badge rounded-pill bg-light text-dark border">學會資料／投影片</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2021–2022</span>
+              <h3>NCT05570942 人體臨床試驗登錄</h3>
+              <p class="text-secondary mb-2">國立臺灣大學醫院發起之 Phase 2 人體介入研究，研究對象為接受輔助化療之第三期大腸直腸癌患者；計畫收案 56 人，採隨機、安慰劑對照與雙盲設計。</p>
+              <p class="small text-secondary mb-0"><strong>查核提醒：</strong>公開登錄可證明研究已登錄；不等同研究已完成、結果為陽性或人體療效已證實，研究結果與正式發表狀態持續查核。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-gold">公開資料可查</span>
+                <span class="badge rounded-pill bg-light text-dark border">結果持續查核</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="history-item reveal">
+            <span class="history-dot" aria-hidden="true"></span>
+            <article class="feature-card history-card">
+              <span class="history-date"><i class="bi bi-calendar3"></i> 2025</span>
+              <h3>TCELL 高脂飲食大鼠同儕審查期刊研究</h3>
+              <p class="text-secondary mb-2"><em>Gastroenterology Research and Practice</em> 發表 Article 5540686，以高脂飲食大鼠模型評估文中所稱 <em>L. rhamnosus</em> TCELL 與血脂、肝臟相關指標。</p>
+              <p class="small text-secondary mb-0"><strong>重要註記：</strong>目前仍列為「TCELL 相關動物研究」；在 TCELL 與 TCELL-1 的直接菌株身分證據鏈完成核對前，不併入 TCELL-1 的直接人體療效證據。</p>
+              <div class="history-status">
+                <span class="badge rounded-pill badge-soft-gold">同儕審查期刊</span>
+                <span class="badge rounded-pill bg-light text-dark border">菌株身分連結待確認</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="dashboard-note mt-4 reveal">
+          <strong>研究歷程查核原則：</strong>研究歷程只記錄可追溯的事件與文件日期；「研究報告」、「學會發表」、「政府核准」、「臨床試驗登錄」與「同儕審查期刊發表」屬不同證據層級，不互相替代。
+        </div>
+
+        <div class="text-center mt-5 mb-4 reveal" id="institutions">
+          <span class="section-kicker"><i class="bi bi-buildings"></i> Research Institutions</span>
+          <h3 class="section-title h2 mb-2">合作／研究機構與實際研究角色</h3>
+          <p class="section-lead mb-0">依現有研究報告與參考資料，逐一標示各機構實際參與的研究工作，不使用「共同證實所有功效」的概括寫法。</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <div class="research-meta mb-3">
+                <span class="badge rounded-pill badge-soft-gold">國立清華大學</span>
+                <span>研究報告編號可追溯</span>
+              </div>
+              <h3>菌株分離、鑑定與基礎特性研究</h3>
+              <p class="text-secondary mb-2">2001 年「本土乳酸桿菌 <em>Lactobacillus rhamnosus</em> TCELL-1 的篩選與鑑定及其一些相關的特徵的研究」，（90）清生科系字第 00537 號。</p>
+              <p class="text-secondary mb-0"><strong>研究角色：</strong>人體腸道來源背景、菌株鑑定、分子身分，以及抗酸、耐膽鹽等體外特性。</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <div class="research-meta mb-3">
+                <span class="badge rounded-pill badge-soft-gold">食品工業發展研究所</span>
+                <span>工作報告／委託試驗可追溯</span>
+              </div>
+              <h3>腸道菌相、菌數、安定性與分析試驗</h3>
+              <p class="text-secondary mb-2">可追溯資料包括：工作報告第 89-1619 號／食研企字第 00369 號、食研菌字第 02542 號、00758 號，以及食研服字第 01740 號。</p>
+              <p class="text-secondary mb-0"><strong>研究角色：</strong>SD 大鼠腸道菌相、菌數與安定性、有機酸及相關檢驗分析。</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <div class="research-meta mb-3">
+                <span class="badge rounded-pill badge-soft-blue">台大醫學院實驗動物中心</span>
+                <span>安全性研究＋學會資料</span>
+              </div>
+              <h3>動物安全性與腫瘤／免疫探索研究</h3>
+              <p class="text-secondary mb-2">2002 年吳銘芳「TCELL-1 乳酸菌粉之健康食品第二類安全性評估試驗」明列於台大醫學院實驗動物中心。</p>
+              <p class="text-secondary mb-0"><strong>研究角色：</strong>動物安全性；另有 B16-F10、A549、Smmu7721、A498 等動物模型與免疫指標之日本學會／投影片資料。</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <article class="feature-card h-100">
+              <div class="research-meta mb-3">
+                <span class="badge rounded-pill badge-soft-green">中國醫藥學院附設醫院</span>
+                <span>完整原始報告待建檔</span>
+              </div>
+              <h3>人體安全性與人體腸胃功能研究</h3>
+              <p class="text-secondary mb-2">原始參考文獻名稱記載楊美都執行「TCELL-1 原生益菌」人體安全性評估，以及人體腸胃功能改善評估；本站保留當時文件所使用之機構名稱。</p>
+              <p class="text-secondary mb-0"><strong>研究角色：</strong>人體安全性與人體腸胃功能研究；兩項研究的受試者是否重疊及完整研究日期仍待原始報告進一步核對。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="dashboard-note mt-4 reveal">
+          <strong>合作機構閱讀原則：</strong>本站所稱「研究／合作機構」，係依現有研究報告、委託試驗、人體研究及學會資料所記載的實際研究工作整理；不代表各機構共同參與同一項研究，也不代表各機構對 TCELL-1 的所有功效主張提供全面背書。
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space mission-band text-center" id="mission" aria-labelledby="mission-title">
+      <div class="container">
+        <span class="section-kicker text-white-50 reveal"><i class="bi bi-compass"></i> Our Mission</span>
+        <h2 class="mission-quote reveal" id="mission-title">「讓每一項 TCELL-1 資訊，都能回到可查證的證據來源。」</h2>
+        <p class="mission-sub reveal">本站不將初步研究、動物研究、體外研究或試驗登錄直接解讀為已證實的人體醫療療效；網站內容亦不取代專業醫療診斷與照護。</p>
+      </div>
+    </section>
+
+    <section class="section-space" aria-labelledby="values-title">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-kicker"><i class="bi bi-stars"></i> Editorial Values</span>
+          <h2 class="section-title display-6" id="values-title">網站五大核心價值</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-xl-4 reveal"><article class="mission-card"><i class="bi bi-search-heart" aria-hidden="true"></i><h3>科學</h3><p>優先使用原始研究、同儕審查文獻、政府資料與可追溯來源。</p></article></div>
+          <div class="col-md-6 col-xl-4 reveal"><article class="mission-card"><i class="bi bi-balance-scale" aria-hidden="true"></i><h3>客觀</h3><p>同時呈現研究結果、限制、不確定性與仍待驗證的問題。</p></article></div>
+          <div class="col-md-6 col-xl-4 reveal"><article class="mission-card"><i class="bi bi-eye" aria-hidden="true"></i><h3>透明</h3><p>標示資料來源、研究類型、版本與更新日期。</p></article></div>
+          <div class="col-md-6 col-xl-4 reveal"><article class="mission-card"><i class="bi bi-signpost-split" aria-hidden="true"></i><h3>證據邊界</h3><p>明確區分人體、動物、體外研究、試驗登錄與政府核准資料，不將不同類型證據互相替代或過度外推。</p></article></div>
+          <div class="col-md-6 col-xl-4 reveal"><article class="mission-card"><i class="bi bi-arrow-repeat" aria-hidden="true"></i><h3>持續更新</h3><p>有新證據、補充文件或錯誤修正時更新內容，並保留更新紀錄。</p></article></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <span class="brand-mark" aria-hidden="true"><i class="bi bi-dna"></i></span>
+            <span>TCELL-1 Research Center</span>
+          </div>
+          <p>整理 TCELL-1 菌株、科學研究、政府核准文件與原始資料，以可追溯來源建立公開、透明的科學資訊平台。</p>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h2 class="h6 fw-bold mb-3">網站導覽</h2>
+          <ul class="footer-list">
+            <li><a href="#top">首頁</a></li>
+            <li><a href="#strain-identity">認識 TCELL-1</a></li>
+            <li><a href="#research">科學研究</a></li>
+            <li><a href="#literature">文獻與原始資料</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h2 class="h6 fw-bold mb-3">資訊專區</h2>
+          <ul class="footer-list">
+            <li><a href="#dashboard">科學證據地圖</a></li>
+            <li><a href="#latest">最新研究與資料更新</a></li>
+            <li><a href="#history">研究歷程與合作機構</a></li>
+            <li><a href="#mission">網站宗旨與編輯原則</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h2 class="h6 fw-bold mb-3">免責聲明</h2>
+          <p class="small">本網站內容僅供健康教育與科學資訊交流，不構成醫療診斷、治療或個人化建議。保健食品不能取代均衡飲食、健康生活方式或醫療照護；如有健康問題，請諮詢合格醫療專業人員。</p>
+          <p class="small mb-0">網站所整理之研究結果應依其研究設計與證據層級解讀，不代表所有研究結果均已獲人體臨床證實；政府核准之保健功效亦不等同疾病治療效果。</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>© <span id="currentYear">2026</span> TCELL-1 Research Center. All rights reserved.</span>
+        <span>網站版本：V1.0 · 資料最後更新：正式發布時登錄</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="返回頁面頂端">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    'use strict';
+
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('show', window.scrollY > 500);
+    }, { passive: true });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealElements = document.querySelectorAll('.reveal');
+
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach((element) => revealObserver.observe(element));
+    } else {
+      revealElements.forEach((element) => element.classList.add('is-visible'));
+    }
+
+    const navbarCollapse = document.getElementById('mainNavbar');
+    const navbarToggler = document.getElementById('mobileMenuToggle');
+
+    /* V1.0-13: independent mobile menu controller.
+       No Bootstrap Collapse API, no `show` state, and no timing dependency. */
+    const setMobileMenuOpen = (open) => {
+      if (!navbarCollapse || !navbarToggler) return;
+      navbarCollapse.classList.toggle('mobile-menu-open', open);
+      navbarToggler.classList.toggle('collapsed', !open);
+      navbarToggler.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    if (navbarToggler) {
+      navbarToggler.addEventListener('click', () => {
+        if (window.innerWidth >= 1200) return;
+
+        /* A nav-link click may leave an inline display:none as an explicit
+           closed state. Clear it only when the hamburger is pressed again. */
+        navbarCollapse.style.removeProperty('display');
+
+        const isOpen = navbarCollapse.classList.contains('mobile-menu-open');
+        setMobileMenuOpen(!isOpen);
+      });
+    }
+
+    /* V1.0-16: mobile nav links close directly in their HTML onclick
+       attributes. This avoids any dependency on delegated or registered
+       JavaScript link listeners. */
+
+    /* Keep state clean when rotating/resizing between mobile and desktop. */
+    window.addEventListener('resize', () => {
+      if (!navbarCollapse || !navbarToggler) return;
+
+      if (window.innerWidth >= 1200) {
+        navbarCollapse.classList.remove('mobile-menu-open');
+        navbarToggler.classList.add('collapsed');
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      } else {
+        setMobileMenuOpen(false);
+      }
+    }, { passive: true });
+
+    const sectionLinks = [...document.querySelectorAll('.navbar .nav-link[href^="#"]')];
+    const sections = sectionLinks
+      .map((link) => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+
+    /* V1.0-19: scientific-name capitalization fixed; V1.0-18 content retained by the greatest actual offsetTop,
+       not by navbar link order. This prevents an earlier section such as
+       #dashboard from overriding #research simply because it appears later
+       in the menu array. */
+    const setActiveLink = () => {
+      const scrollPosition = window.scrollY + 130;
+      let currentId = '#top';
+      let currentTop = -Infinity;
+
+      sections.forEach((section) => {
+        const top = section.offsetTop;
+        if (top <= scrollPosition && top > currentTop) {
+          currentTop = top;
+          currentId = `#${section.id}`;
+        }
+      });
+
+      sectionLinks.forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === currentId);
+      });
+    };
+
+    window.addEventListener('scroll', setActiveLink, { passive: true });
+    setActiveLink();
+
+  </script>
+</body>
+</html>
