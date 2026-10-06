@@ -784,6 +784,11 @@
       .history-card { padding: 1.25rem 1.15rem; }
     }
 
+    /* V1.0-27-01: precise source-record anchor positioning */
+    [id^="source-"] {
+      scroll-margin-top: 110px;
+    }
+
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after {
         scroll-behavior: auto !important;
@@ -977,6 +982,10 @@
                 <li><strong>ATCC PTA-2406</strong>：American Type Culture Collection，2000 年 8 月 22 日。</li>
                 <li>ATCC 保存記載依布達佩斯條約之專利程序用微生物保存制度辦理。</li>
               </ul>
+              <div class="mt-3">
+                <a class="text-link me-3" href="#source-ccrc-910145">CCRC 來源紀錄 <i class="bi bi-arrow-right"></i></a>
+                <a class="text-link" href="#source-atcc-pta2406">ATCC 來源紀錄 <i class="bi bi-arrow-right"></i></a>
+              </div>
             </article>
           </div>
 
@@ -1214,6 +1223,7 @@
                 <h3>早期人體安全性評估</h3>
                 <p class="text-secondary mb-2">健康志願者分為安慰劑、低、中、高劑量四組；完成分析者分別為 8、10、10、10 人，共 38 人。文件記載採雙盲方式進行 4 週，並於第 30 天及停用後第 7 天採集檢體。</p>
                 <p class="text-secondary mb-0"><strong>解讀：</strong>屬早期人體安全性資料；部分檢驗值雖有統計差異，但文件記載仍在正常範圍，且未觀察到過敏或其他不良反應。</p>
+                <div class="mt-3"><a class="text-link" href="#source-human-safety">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
               </article>
             </div>
 
@@ -1222,6 +1232,7 @@
                 <h3>人體腸胃功能評估</h3>
                 <p class="text-secondary mb-2">文件記載相同的四組設計與 4 週雙盲試驗，完成分析者亦為 8、10、10、10 人；並分析糞便菌相與部分腸道菌群變化。</p>
                 <p class="text-secondary mb-0"><strong>待查核：</strong>安全性與腸胃功能章節之受試者人數與流程高度相似，目前不直接視為兩個完全獨立的 38 人臨床試驗；是否為相同或重疊受試者，待原始研究報告確認。</p>
+                <div class="mt-3"><a class="text-link" href="#source-human-gi">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
               </article>
             </div>
 
@@ -1230,6 +1241,7 @@
                 <h3>人體腸道存活／持續檢出</h3>
                 <p class="text-secondary mb-2">8 名健康成人（男 4、女 4）每日食用 4 公克 TCELL-1、連續 1 週；停用後連續數週採集糞便，以培養與 PCR 追蹤菌株。</p>
                 <p class="text-secondary mb-0"><strong>用詞界線：</strong>停用後仍能在部分受試者糞便中持續檢出，可支持「腸道存活／持續存在」；但此方法沒有直接測量腸黏膜附著，因此不直接寫成「已證明定殖」。</p>
+                <div class="mt-3"><a class="text-link" href="#source-human-survival">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
               </article>
             </div>
 
@@ -1238,6 +1250,7 @@
                 <h3>NCT05570942 登錄臨床試驗</h3>
                 <p class="text-secondary mb-2">公開試驗登錄為 Phase 2 人體介入研究，研究對象為接受輔助化療之第三期大腸直腸癌患者；計畫收案 56 人，採隨機、安慰劑對照與雙盲設計。</p>
                 <p class="text-secondary mb-2"><strong>目前標示：</strong>已登錄人體臨床試驗；研究結果與正式發表狀態持續查核。</p>
+                <a class="text-link me-3" href="#source-nct05570942">查看來源紀錄 <i class="bi bi-arrow-right"></i></a>
                 <a class="text-link" href="https://clinicaltrials.gov/study/NCT05570942" target="_blank" rel="noopener noreferrer">查看 ClinicalTrials.gov 登錄 <i class="bi bi-box-arrow-up-right"></i></a>
               </article>
             </div>
@@ -1261,6 +1274,7 @@
                 <h3>SD 大鼠安全性評估</h3>
                 <p class="text-secondary mb-2">早期資料記載以 80 隻 SD 大鼠進行 4 週安全性試驗，分為對照、低、中、高劑量四組，每組 20 隻，公母各 10 隻；觀察體重、血液學、血清生化及病理組織。</p>
                 <p class="text-secondary mb-0">另包含微生物基因突變、動物體內微核與體外染色體結構變異等基因毒性評估。結果應以原始試驗報告為準，不代表所有長期風險均已排除。</p>
+                <div class="mt-3"><a class="text-link" href="#source-animal-safety">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
               </article>
             </div>
 
@@ -1269,6 +1283,7 @@
                 <h3>SD 大鼠腸道菌相研究</h3>
                 <p class="text-secondary mb-2">40 隻、6 週齡雄性 SD 大鼠隨機分為四組，每組 10 隻。研究分析糞便與盲腸菌相；文件記載部分劑量組的 Bifidobacteria 增加、Enterobacteriaceae 降低並達統計差異。</p>
                 <p class="text-secondary mb-0"><strong>解讀：</strong>屬動物腸道菌相研究，不能直接等同人體腸道菌相改善。</p>
+                <div class="mt-3"><a class="text-link" href="#source-animal-microbiota">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
               </article>
             </div>
 
@@ -1277,6 +1292,7 @@
                 <h3>腫瘤與免疫探索性動物研究</h3>
                 <p class="text-secondary mb-2">藍皮書收錄 B16-F10 黑色素瘤轉移模型，以及 A549、Smmu7721、A498 等腫瘤模型之早期學會發表資料；部分模型曾報告腫瘤生長／轉移與 IgA、IgM、IL-2、IL-4、IL-10 等指標變化。</p>
                 <p class="text-secondary mb-0"><strong>證據定位：</strong>現階段列為「學會發表資料／藍皮書收錄之探索性動物研究」，不可解讀為已證實可預防或治療人體癌症，也不直接視為同儕審查期刊論文。</p>
+                <div class="mt-3"><a class="text-link" href="#source-animal-meeting">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
               </article>
             </div>
           </div>
@@ -1299,6 +1315,7 @@
                 <h3>抗酸與耐膽鹽</h3>
                 <p class="text-secondary mb-2">早期體外培養試驗觀察 TCELL-1 在低 pH 與含膽鹽環境中的生長反應；資料記載 pH 2.5 條件下生長明顯停頓，恢復至 pH 6 後仍可繼續生長，且在 0.3%～0.4% 膽鹽環境中仍可生長。</p>
                 <p class="text-secondary mb-0"><strong>解讀：</strong>支持菌株具有一定酸／膽鹽耐受性，但不能單獨證明人體腸道定殖或健康效益。</p>
+                <div class="mt-3"><a class="text-link" href="#source-acid-bile">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
               </article>
             </div>
 
@@ -1307,6 +1324,7 @@
                 <h3>抑制 14 種測試菌株</h3>
                 <p class="text-secondary mb-2">早期培養皿試驗以 17 株測試菌進行觀察，其中 14 株出現明顯抑菌圈，文件列舉赤痢菌、金黃色葡萄球菌及糞腸球菌等。</p>
                 <p class="text-secondary mb-0"><strong>用詞界線：</strong>這代表體外抑菌活性；是否能在人體腸道中產生相同效果，需另以人體研究驗證。</p>
+                <div class="mt-3"><a class="text-link" href="#source-inhibition-14">查看來源紀錄 <i class="bi bi-arrow-right"></i></a></div>
               </article>
             </div>
 
@@ -1344,7 +1362,8 @@
                 </div>
                 <h3>衛署健食字第 A00042 號許可證與展延紀錄</h3>
                 <p class="text-secondary">已建檔健康食品許可證及展延紀錄。原始許可文件記載原料成分包含 Lactobacillus rhamnosus Tcell-1；證書核准保健功效為「本產品有助於增加腸內益生菌」。政府核准資料與學術研究證據分開呈現。</p>
-                <a class="text-link" href="#literature">查看政府核准資料 <i class="bi bi-arrow-right"></i></a>
+                <a class="text-link me-3" href="#source-a00042">查看許可證來源 <i class="bi bi-arrow-right"></i></a>
+                <a class="text-link" href="#source-a00042-extension">查看展延紀錄 <i class="bi bi-arrow-right"></i></a>
               </div>
             </article>
           </div>
@@ -1372,6 +1391,7 @@
                 </div>
                 <h3>高脂飲食大鼠之血脂與肝臟相關研究</h3>
                 <p class="text-secondary">2025 年同儕審查研究評估 Lactobacillus rhamnosus TCELL 於高脂飲食大鼠模型的影響。現階段列為 TCELL 相關動物研究；在 TCELL 與 TCELL-1 的直接菌株身分證據鏈完成核對前，不作為 TCELL-1 人體療效證據。</p>
+                <a class="text-link me-3" href="#source-2025-tcell">查看來源紀錄 <i class="bi bi-arrow-right"></i></a>
                 <a class="text-link" href="https://doi.org/10.1155/grp/5540686" target="_blank" rel="noopener noreferrer">查看期刊研究 <i class="bi bi-box-arrow-up-right"></i></a>
               </div>
             </article>
@@ -1414,7 +1434,7 @@
 
           <div class="row g-4">
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-human-safety">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-green">人體研究｜安全性</span>
                   <span>藍皮書收錄｜原始完整報告待核對</span>
@@ -1428,7 +1448,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-human-gi">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-green">人體研究｜腸胃功能</span>
                   <span>受試者是否重疊待確認</span>
@@ -1442,7 +1462,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-human-survival">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-green">人體研究｜腸道持續檢出</span>
                   <span>藍皮書附錄資料</span>
@@ -1455,7 +1475,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-nct05570942">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-green">公開試驗登錄</span>
                   <span>NCT05570942｜結果持續查核</span>
@@ -1479,7 +1499,7 @@
 
           <div class="row g-4">
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-animal-safety">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-blue">動物安全性｜2002</span>
                   <span>完整原始報告待建檔</span>
@@ -1493,7 +1513,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-animal-microbiota">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-blue">腸道菌相｜2000</span>
                   <span>工作報告號可追溯</span>
@@ -1507,7 +1527,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-animal-meeting">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-blue">腫瘤／免疫探索</span>
                   <span>學會發表／投影片資料</span>
@@ -1520,7 +1540,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-2025-tcell">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-blue">Peer-reviewed｜2025</span>
                   <span>TCELL 相關｜身分連結待確認</span>
@@ -1545,7 +1565,7 @@
 
           <div class="row g-4">
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-tsinghua-00537">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-gold">菌株鑑定｜2001</span>
                   <span>清華大學研究報告</span>
@@ -1558,7 +1578,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-acid-bile">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-gold">體外耐受性</span>
                   <span>清華大學（90）00537 號</span>
@@ -1571,7 +1591,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-inhibition-14">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-gold">體外抑菌</span>
                   <span>14／17 測試菌株有抑菌圈</span>
@@ -1609,7 +1629,7 @@
 
           <div class="row g-4">
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-a00042">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-blue">政府核准文件</span>
                   <span>原始許可證已取得</span>
@@ -1645,7 +1665,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-a00042-extension">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-blue">官方展延文件</span>
                   <span>效期至民國 118 年 2 月 20 日</span>
@@ -1671,7 +1691,7 @@
 
           <div class="row g-4">
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-us-patent">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-gold">專利公開文件</span>
                   <span>原始全文可查</span>
@@ -1684,7 +1704,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-ccrc-910145">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-gold">菌株保存紀錄</span>
                   <span>CCRC 910145</span>
@@ -1696,7 +1716,7 @@
             </div>
 
             <div class="col-md-6 reveal">
-              <article class="feature-card h-100">
+              <article class="feature-card h-100" id="source-atcc-pta2406">
                 <div class="research-meta mb-3">
                   <span class="badge rounded-pill badge-soft-gold">國際保存紀錄</span>
                   <span>ATCC PTA-2406</span>
