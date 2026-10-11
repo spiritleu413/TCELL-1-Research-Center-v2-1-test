@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- V1.0-30 clinical-trial status refresh and mobile footer refinement; layout/menu/accepted anchors preserved -->
+<!-- V1.0-31 mobile back-to-top refinement; V1.0-30 layout/menu/accepted anchors preserved -->
 <html lang="zh-Hant-TW">
 <head>
   <meta charset="utf-8">
@@ -619,6 +619,16 @@
       footer .col-6 { width: 100%; }
       footer.pb-4 { padding-bottom: 5.5rem !important; }
       .footer-bottom { font-size: .82rem; }
+
+      /* V1.0-31: mobile back-to-top refinement — smaller footprint and closer to screen edge */
+      .back-to-top {
+        right: 6px;
+        bottom: 8px;
+        width: 44px;
+        height: 44px;
+        font-size: .92rem;
+        box-shadow: 0 7px 18px rgba(0,0,0,.16);
+      }
     }
 
     @media (max-width: 420px) {
@@ -2063,7 +2073,7 @@
 
       <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
         <span>© <span id="currentYear">2026</span> TCELL-1 Research Center. All rights reserved.</span>
-        <span>網站版本：V1.0-30 正式版 · 資料最後更新：2026-10-11</span>
+        <span>網站版本：V1.0-31 測試版 · 資料最後更新：2026-10-11</span>
       </div>
     </div>
   </footer>
